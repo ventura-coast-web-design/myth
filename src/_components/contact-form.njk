@@ -1,0 +1,27 @@
+<section id="contact" class="section contact" aria-labelledby="contact-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 id="contact-title">Contact</h2>
+      <p>Send a message. (For now, this form is basic and not connected to a backend.)</p>
+    </header>
+
+    <form class="contact-form" method="post" action="#">
+      <div class="contact-form__field">
+        <label for="contact-name">Name</label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" required />
+      </div>
+
+      <div class="contact-form__field">
+        <label for="contact-comment">Comment</label>
+        <textarea
+          id="contact-comment"
+          name="comment"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+
+      <button class="btn btn--primary" type="submit">Send</button>
+    </form>
+  </div>
+</section>

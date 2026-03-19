@@ -1,0 +1,63 @@
+@use "sass:color";
+@use "variables";
+@use "mixins";
+
+.videos__grid {
+  display: grid;
+  gap: 1.15rem;
+
+  @include mixins.responsive(variables.$breakpoint-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mixins.responsive(variables.$breakpoint-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.video-card {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.video-card__embed {
+  position: relative;
+  border: 1px solid variables.$border-color;
+  border-radius: 0.95rem;
+  overflow: hidden;
+  background: color.adjust(variables.$text-color, $alpha: -0.86);
+  aspect-ratio: 16 / 9;
+}
+
+.video-card__embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-card__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0.9rem;
+  background: linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.55) 100%);
+  color: #fff;
+  pointer-events: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.video-card__overlay span {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.35rem 0.55rem;
+  border-radius: 0.6rem;
+}
+
+.video-card__title {
+  margin: 0;
+  font-weight: 700;
+}

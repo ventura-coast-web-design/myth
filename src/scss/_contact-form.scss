@@ -1,0 +1,53 @@
+@use "sass:color";
+@use "variables";
+
+.contact-form {
+  max-width: 62ch;
+  border: 1px solid variables.$border-color;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  background: variables.$background-color;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form__field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.contact-form label {
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid variables.$border-color;
+  border-radius: 0.75rem;
+  padding: 0.9rem 0.95rem;
+  font: inherit;
+  color: variables.$text-color;
+  background: variables.$background-color;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: variables.$primary-color;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18);
+}
+
+.contact-form button {
+  margin-top: 0.25rem;
+}
+
+.contact p {
+  max-width: 62ch;
+}

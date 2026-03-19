@@ -1,0 +1,38 @@
+<section id="videos" class="section videos" aria-labelledby="videos-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 id="videos-title">Watch the Videos</h2>
+      <p>Choose a session to follow along with the class material.</p>
+    </header>
+
+    {%- set videos = [
+      { "title": "Session 1", "id": "VIDEO_ID_1" },
+      { "title": "Session 2", "id": "VIDEO_ID_2" },
+      { "title": "Session 3", "id": "VIDEO_ID_3" },
+      { "title": "Session 4", "id": "VIDEO_ID_4" },
+      { "title": "Session 5", "id": "VIDEO_ID_5" },
+      { "title": "Session 6", "id": "VIDEO_ID_6" }
+    ] -%}
+
+    <div class="videos__grid">
+      {%- for v in videos %}
+        <article class="video-card">
+          <div class="video-card__embed">
+            <iframe
+              src="https://www.youtube.com/embed/{{ v.id }}"
+              title="{{ v.title }}"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="video-card__overlay">
+              <span>Replace `{{ v.id }}` with your YouTube video ID</span>
+            </div>
+          </div>
+          <p class="video-card__title">{{ v.title }}</p>
+        </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
