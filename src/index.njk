@@ -1,9 +1,13 @@
 ---
 layout: base.njk
-title: "Eleventy SCSS Template"
-description: "A simple, modern static website template built with Eleventy and SCSS"
+title: "The Myth of Satan"
+description: "Christadelphian classes and videos addressing the myth of Satan."
 ---
 
-<div class="index">
-  INDEX
+<div class="home">
+  {% include "./_components/hero-banner.njk" %}
+  {% include "./_components/class-list.njk" %}
+  {% include "./_components/youtube-gallery.njk" %}
+  {% include "./_components/beliefs.njk" %}
+  {% include "./_components/contact-form.njk" %}
 </div>
