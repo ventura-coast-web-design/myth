@@ -1,0 +1,31 @@
+@use "sass:color";
+@use "variables";
+@use "mixins";
+
+.hero {
+  background:
+    radial-gradient(700px 220px at 10% 0%, color.adjust(variables.$accent-color, $alpha: -0.6), transparent 55%),
+    radial-gradient(560px 260px at 95% 15%, color.adjust(variables.$primary-color, $alpha: -0.75), transparent 60%),
+    variables.$light-background;
+  border-bottom: 1px solid variables.$border-color;
+}
+
+.hero__inner {
+  @include mixins.container;
+  padding: 4.5rem 0 3.2rem;
+}
+
+.hero__content {
+  max-width: 62ch;
+}
+
+.hero__content h1 {
+  margin-bottom: 1rem;
+}
+
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.6rem;
+}
