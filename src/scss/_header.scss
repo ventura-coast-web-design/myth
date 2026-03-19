@@ -1,1 +1,53 @@
 @use "variables";
+@use "mixins";
+
+.site-header {
+  background-color: variables.$background-color;
+  border-bottom: 1px solid variables.$border-color;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  @include mixins.container;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  &__logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: variables.$secondary-color;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    @include mixins.responsive(variables.$breakpoint-md) {
+      gap: 2.2rem;
+    }
+  }
+
+  &__link {
+    color: variables.$text-color;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    padding: 0.35rem 0;
+
+    &:hover {
+      color: variables.$primary-color;
+    }
+  }
+}
