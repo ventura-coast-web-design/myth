@@ -1,0 +1,40 @@
+@use "variables";
+@use "mixins";
+
+.classes__list {
+  list-style: none;
+  display: grid;
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+
+  @include mixins.responsive(variables.$breakpoint-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.class-card {
+  background-color: variables.$background-color;
+  border: 1px solid variables.$border-color;
+  border-radius: 0.95rem;
+  padding: 1.15rem 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.class-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background-color: variables.$accent-color;
+}
+
+.class-card h3 {
+  margin-bottom: 0.5rem;
+  padding-left: 0.1rem;
+}
+
+.class-card p {
+  margin-bottom: 0;
+}

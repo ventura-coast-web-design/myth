@@ -1,0 +1,36 @@
+@use "variables";
+@use "mixins";
+
+.beliefs {
+  padding-top: 2.5rem;
+}
+
+.beliefs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.95rem;
+}
+
+.beliefs__list li {
+  position: relative;
+  padding-left: 1.35rem;
+  line-height: 1.55;
+}
+
+.beliefs__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background-color: variables.$accent-color;
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.18);
+}
+
+.beliefs__list li:last-child {
+  margin-bottom: 0;
+}
