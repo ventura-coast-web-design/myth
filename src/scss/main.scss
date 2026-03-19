@@ -1,2 +1,16 @@
 @use "sass:color";
-@use "index";
+@use "variables";
+@use "mixins";
+@use "reset";
+@use "base";
+@use "layout";
+@use "home";
+@use "header";
+@use "footer";
+@use "hero-banner";
+@use "class-list";
+@use "youtube-gallery";
+@use "beliefs";
+@use "contact-form";
+@use "contact";
+@use "about";
