@@ -1,0 +1,107 @@
+@use "variables";
+@use "mixins";
+// Layout components
+.site-header {
+  background-color: variables.$background-color;
+  border-bottom: 1px solid variables.$border-color;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  @include mixins.container;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: variables.$secondary-color;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    @include mixins.responsive(variables.$breakpoint-md) {
+      gap: 3rem;
+    }
+  }
+
+  &__link {
+    color: variables.$text-color;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: variables.$primary-color;
+    }
+  }
+}
+
+.site-main {
+  min-height: calc(100vh - 140px);
+  padding: 2rem 0;
+
+  @include mixins.responsive(variables.$breakpoint-md) {
+    padding: 4rem 0;
+  }
+}
+
+.site-footer {
+  background-color: variables.$light-background;
+  border-top: 1px solid variables.$border-color;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer__container {
+  @include mixins.container;
+  text-align: center;
+  color: variables.$light-text;
+}
+
+// Grid system
+.grid {
+  display: grid;
+  gap: 2rem;
+
+  &--2 {
+    grid-template-columns: 1fr;
+
+    @include mixins.responsive(variables.$breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &--3 {
+    grid-template-columns: 1fr;
+
+    @include mixins.responsive(variables.$breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mixins.responsive(variables.$breakpoint-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &--4 {
+    grid-template-columns: 1fr;
+
+    @include mixins.responsive(variables.$breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mixins.responsive(variables.$breakpoint-lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+} 

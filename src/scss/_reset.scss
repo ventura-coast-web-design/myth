@@ -1,0 +1,19 @@
+@use "variables";
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: variables.$font-size-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: variables.$font-family;
+  line-height: variables.$line-height-base;
+  color: variables.$text-color;
+  background-color: variables.$background-color;
+} 
