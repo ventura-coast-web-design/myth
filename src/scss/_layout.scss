@@ -96,6 +96,10 @@
   @include mixins.responsive(variables.$breakpoint-md) {
     padding: 4rem 0;
   }
+
+  &:has(> .home) {
+    padding-top: 0;
+  }
 }
 
 // Grid system
