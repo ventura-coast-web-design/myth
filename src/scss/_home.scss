@@ -2,6 +2,8 @@
 @use "variables";
 
 .home {
+  margin-top: 0;
+  padding-top: 0;
   background: linear-gradient(180deg, variables.$light-background 0%, transparent 220px);
 }
 
