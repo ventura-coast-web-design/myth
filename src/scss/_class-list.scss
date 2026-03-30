@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "variables";
 @use "mixins";
 
@@ -16,18 +17,19 @@
 .class-card {
   background-color: variables.$background-color;
   border: 1px solid variables.$border-color;
-  border-radius: 0.95rem;
+  border-radius: 0.35rem;
   padding: 1.15rem 1.2rem;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
 }
 
 .class-card::before {
   content: "";
   position: absolute;
   inset: 0 auto 0 0;
-  width: 6px;
-  background-color: variables.$accent-color;
+  width: 5px;
+  background: linear-gradient(180deg, variables.$primary-color 0%, color.adjust(variables.$primary-color, $lightness: -12%) 100%);
 }
 
 .class-card h3 {

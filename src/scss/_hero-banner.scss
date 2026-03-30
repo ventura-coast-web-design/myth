@@ -3,14 +3,42 @@
 @use "mixins";
 
 .hero {
+  position: relative;
+  color: #f5f2ef;
   background:
-    radial-gradient(700px 220px at 10% 0%, color.adjust(variables.$accent-color, $alpha: -0.6), transparent 55%),
-    radial-gradient(560px 260px at 95% 15%, color.adjust(variables.$primary-color, $alpha: -0.75), transparent 60%),
-    variables.$light-background;
-  border-bottom: 1px solid variables.$border-color;
+    radial-gradient(
+      ellipse 120% 80% at 50% 120%,
+      color.change(variables.$primary-color, $alpha: 0.45),
+      transparent 55%
+    ),
+    radial-gradient(
+      520px 280px at 0% 0%,
+      color.change(variables.$primary-color, $alpha: 0.35),
+      transparent 55%
+    ),
+    radial-gradient(
+      480px 240px at 100% 0%,
+      color.change(variables.$primary-color, $alpha: 0.22),
+      transparent 50%
+    ),
+    linear-gradient(165deg, variables.$ink 0%, #1c1818 42%, #121010 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.12;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+  }
 }
 
 .hero__inner {
+  position: relative;
+  z-index: 1;
   @include mixins.container;
   padding: 4.5rem 0 3.2rem;
 }
@@ -21,6 +49,13 @@
 
 .hero__content h1 {
   margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.45);
+}
+
+.hero__content p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.05rem;
 }
 
 .hero__cta {
@@ -28,4 +63,26 @@
   flex-wrap: wrap;
   gap: 0.85rem;
   margin-top: 1.6rem;
+}
+
+.hero .btn--primary {
+  background-color: variables.$primary-color;
+  border-color: variables.$primary-color;
+  box-shadow: 0 4px 20px color.change(variables.$primary-color, $alpha: 0.35);
+
+  &:hover {
+    background-color: color.adjust(variables.$primary-color, $lightness: 6%);
+    border-color: color.adjust(variables.$primary-color, $lightness: 6%);
+  }
+}
+
+.hero .btn--ghost {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #f5f2ef;
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.65);
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.06);
+  }
 }

@@ -2,11 +2,12 @@
 @use "mixins";
 
 .site-header {
-  background-color: variables.$background-color;
-  border-bottom: 1px solid variables.$border-color;
+  background-color: rgba(250, 248, 246, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(20, 17, 16, 0.12);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 10001;
 }
 
 .nav {
@@ -20,11 +21,16 @@
   }
 
   &__logo {
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: variables.$secondary-color;
-    letter-spacing: -0.01em;
-    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+
+    img {
+      display: block;
+      height: clamp(7.3125rem, 15.75vmin, 10.6875rem);
+      width: auto;
+      max-width: min(58.5rem, 95vw);
+    }
   }
 
   &__menu {
@@ -42,7 +48,11 @@
 
   &__link {
     color: variables.$text-color;
+    font-family: variables.$font-family-display;
     font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
     transition: color 0.2s ease;
     padding: 0.35rem 0;
 

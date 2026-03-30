@@ -20,8 +20,30 @@
   margin-bottom: 2rem;
   max-width: 60ch;
 
+  h2 {
+    position: relative;
+    padding-bottom: 0.65rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 3rem;
+      height: 3px;
+      background: linear-gradient(
+        90deg,
+        variables.$primary-color,
+        color.change(variables.$primary-color, $alpha: 0)
+      );
+      border-radius: 2px;
+    }
+  }
+
   p {
     margin-bottom: 0;
+    color: variables.$light-text;
+    font-size: 1.05rem;
   }
 }
 
@@ -41,9 +63,14 @@
   background-color: variables.$primary-color;
   border-color: variables.$primary-color;
   color: #fff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: variables.$font-family-display;
+  font-size: 0.95rem;
 
   &:hover {
     background-color: color.adjust(variables.$primary-color, $lightness: -8%);
+    border-color: color.adjust(variables.$primary-color, $lightness: -8%);
   }
 }
 
@@ -51,9 +78,13 @@
   background-color: transparent;
   border-color: variables.$border-color;
   color: variables.$text-color;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-family: variables.$font-family-display;
+  font-size: 0.95rem;
 
   &:hover {
-    border-color: color.adjust(variables.$border-color, $lightness: -10%);
+    border-color: color.adjust(variables.$border-color, $lightness: -18%);
     color: variables.$primary-color;
   }
 }
@@ -103,4 +134,17 @@
       grid-template-columns: repeat(4, 1fr);
     }
   }
+}
+
+.page-header {
+  background: linear-gradient(165deg, variables.$ink 0%, #1c1818 100%);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 2.75rem variables.$container-padding;
+  font-family: variables.$font-family-display;
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 } 

@@ -1,6 +1,12 @@
+@use "sass:color";
 @use "variables";
 
 .home {
-  // A subtle backdrop behind the hero section for depth.
-  background: linear-gradient(180deg, variables.$light-background 0%, transparent 260px);
+  background: linear-gradient(180deg, variables.$light-background 0%, transparent 220px);
+}
+
+// Alternate section bands — editorial rhythm
+.home > section.section:nth-child(even) {
+  background-color: color.mix(variables.$light-background, variables.$ink, 94%);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.04);
 }

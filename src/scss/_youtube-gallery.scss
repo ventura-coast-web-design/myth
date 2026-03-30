@@ -23,7 +23,7 @@
 .video-card__embed {
   position: relative;
   border: 1px solid variables.$border-color;
-  border-radius: 0.95rem;
+  border-radius: 0.35rem;
   overflow: hidden;
   background: color.adjust(variables.$text-color, $alpha: -0.86);
   aspect-ratio: 16 / 9;
