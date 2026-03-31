@@ -26,19 +26,35 @@ eleventyExcludeFromCollections: true
   <section class="section city-page__venue" aria-labelledby="venue-title">
     <div class="container">
       <h2 id="venue-title">Venue</h2>
-      <div class="city-page__address-block">
-        {% if city.venueName %}
-          <p class="city-page__venue-name">{{ city.venueName }}</p>
-        {% endif %}
-        <address class="city-page__address">
-          {% for line in city.addressLines %}
-            {{ line }}{% if not loop.last %}<br />{% endif %}
-          {% endfor %}
-        </address>
-        {% if city.mapUrl %}
-          <p class="city-page__map-link">
-            <a href="{{ city.mapUrl }}" rel="noopener noreferrer">Open in Maps</a>
-          </p>
+      <div class="city-page__venue-grid">
+        <div class="city-page__venue-copy">
+          <div class="city-page__address-block">
+            {% if city.venueName %}
+              <p class="city-page__venue-name">{{ city.venueName }}</p>
+            {% endif %}
+            <address class="city-page__address">
+              {% for line in city.addressLines %}
+                {{ line }}{% if not loop.last %}<br />{% endif %}
+              {% endfor %}
+            </address>
+            {% if city.mapUrl %}
+              <p class="city-page__map-link">
+                <a href="{{ city.mapUrl }}" rel="noopener noreferrer">Open in Maps</a>
+              </p>
+            {% endif %}
+          </div>
+        </div>
+        {% if mapEmbedSrc %}
+          <div class="city-page__map">
+            <iframe
+              class="city-page__map-frame"
+              title="Map centered on the {{ city.city }} class venue (approximate)"
+              src="{{ mapEmbedSrc }}"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
         {% endif %}
       </div>
     </div>

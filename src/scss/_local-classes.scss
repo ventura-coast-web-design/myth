@@ -1,5 +1,6 @@
 @use "sass:color";
 @use "variables";
+@use "mixins";
 
 .local-hub__intro {
   padding-bottom: 2rem;
@@ -173,9 +174,68 @@
   color: variables.$light-text;
 }
 
+.city-page > .section:not(.city-page__hero) {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  scroll-margin-top: 100px;
+
+  @include mixins.responsive(variables.$breakpoint-md) {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
+
+.city-page > .city-page__venue.section {
+  padding-top: 2rem;
+
+  @include mixins.responsive(variables.$breakpoint-md) {
+    padding-top: 2.5rem;
+  }
+}
+
 .city-page__venue h2,
 .city-page__schedule h2 {
   font-family: variables.$font-family-display;
+}
+
+.city-page__venue h2 {
+  margin-bottom: 1.25rem;
+}
+
+.city-page__venue-grid {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+
+  @include mixins.responsive(variables.$breakpoint-md) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: 2rem 2.5rem;
+  }
+}
+
+.city-page__venue-copy {
+  min-width: 0;
+}
+
+.city-page__map {
+  position: relative;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid variables.$border-color;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  aspect-ratio: 4 / 3;
+  min-height: 220px;
+  background: variables.$light-background;
+}
+
+.city-page__map-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
 
 .city-page__address-block {

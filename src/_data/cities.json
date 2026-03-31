@@ -9,6 +9,7 @@
       "Simi Valley, CA"
     ],
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Simi+Valley%2C+CA",
+    "mapEmbedQuery": "Simi Valley Town Center, Simi Valley, CA 93065",
     "netlifyFormName": "local-contact-simi-valley",
     "scheduleIntro": "Schedule and times — confirm locally (times are usually evenings, Pacific).",
     "sessions": [
@@ -54,6 +55,7 @@
       "Thousand Oaks, CA"
     ],
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Thousand+Oaks%2C+CA",
+    "mapEmbedQuery": "The Oaks Mall, Thousand Oaks, CA 91360",
     "netlifyFormName": "local-contact-thousand-oaks",
     "scheduleIntro": "Schedule and times — confirm locally (times are usually evenings, Pacific).",
     "sessions": [
@@ -99,6 +101,7 @@
       "Los Angeles area, CA"
     ],
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Verdugo+City%2C+CA",
+    "mapEmbedQuery": "Verdugo City, Glendale, CA 91202",
     "netlifyFormName": "local-contact-verdugo",
     "scheduleIntro": "Schedule and times — confirm locally (times are usually evenings, Pacific).",
     "sessions": [
@@ -144,6 +147,7 @@
       "Los Angeles, CA"
     ],
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=Los+Angeles%2C+CA",
+    "mapEmbedQuery": "Los Angeles City Hall, Los Angeles, CA 90012",
     "netlifyFormName": "local-contact-los-angeles",
     "scheduleIntro": "Schedule and times — confirm locally (times are usually evenings, Pacific).",
     "sessions": [
