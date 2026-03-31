@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "simi-valley",
+    "city": "Simi Valley",
+    "region": "CA",
+    "venueName": "Venue — update with hall or meeting address",
+    "addressLines": [
+      "Address line 1",
+      "Simi Valley, CA"
+    ],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Simi+Valley%2C+CA",
+    "netlifyFormName": "local-contact-simi-valley",
+    "scheduleIntro": "Schedule and times — confirm locally (times are usually evenings, Pacific).",
+    "sessions": [
+      {
+        "title": "Class 1: The Adversary in Scripture",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 2: The Serpent and the Promise",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 3: “Lucifer” and Misread Prophecy",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 4: Satan in Job and Zechariah",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 5: The New Testament’s Use of “Satan”",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 6: Hope, Resurrection, and Kingdom",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      }
+    ]
+  },
+  {
+    "slug": "thousand-oaks",
+    "city": "Thousand Oaks",
+    "region": "CA",
+    "venueName": "Venue — update with hall or meeting address",
+    "addressLines": [
+      "Address line 1",
+      "Thousand Oaks, CA"
+    ],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Thousand+Oaks%2C+CA",
+    "netlifyFormName": "local-contact-thousand-oaks",
+    "scheduleIntro": "Schedule and times — confirm locally (times are usually evenings, Pacific).",
+    "sessions": [
+      {
+        "title": "Class 1: The Adversary in Scripture",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 2: The Serpent and the Promise",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 3: “Lucifer” and Misread Prophecy",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 4: Satan in Job and Zechariah",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 5: The New Testament’s Use of “Satan”",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 6: Hope, Resurrection, and Kingdom",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      }
+    ]
+  },
+  {
+    "slug": "verdugo",
+    "city": "Verdugo",
+    "region": "CA",
+    "venueName": "Venue — update with hall or meeting address (Verdugo / Glendale area)",
+    "addressLines": [
+      "Address line 1",
+      "Los Angeles area, CA"
+    ],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Verdugo+City%2C+CA",
+    "netlifyFormName": "local-contact-verdugo",
+    "scheduleIntro": "Schedule and times — confirm locally (times are usually evenings, Pacific).",
+    "sessions": [
+      {
+        "title": "Class 1: The Adversary in Scripture",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 2: The Serpent and the Promise",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 3: “Lucifer” and Misread Prophecy",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 4: Satan in Job and Zechariah",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 5: The New Testament’s Use of “Satan”",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 6: Hope, Resurrection, and Kingdom",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      }
+    ]
+  },
+  {
+    "slug": "los-angeles",
+    "city": "Los Angeles",
+    "region": "CA",
+    "venueName": "Venue — update with hall or meeting address",
+    "addressLines": [
+      "Address line 1",
+      "Los Angeles, CA"
+    ],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Los+Angeles%2C+CA",
+    "netlifyFormName": "local-contact-los-angeles",
+    "scheduleIntro": "Schedule and times — confirm locally (times are usually evenings, Pacific).",
+    "sessions": [
+      {
+        "title": "Class 1: The Adversary in Scripture",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 2: The Serpent and the Promise",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 3: “Lucifer” and Misread Prophecy",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 4: Satan in Job and Zechariah",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 5: The New Testament’s Use of “Satan”",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      },
+      {
+        "title": "Class 6: Hope, Resurrection, and Kingdom",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      }
+    ]
+  }
+]

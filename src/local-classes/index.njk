@@ -1,0 +1,76 @@
+---
+layout: base.njk
+title: "Local classes"
+description: "Find Myth of Satan class series near you — venue, schedule, and local contact."
+---
+
+<div class="local-hub">
+  <header class="section local-hub__intro">
+    <div class="container">
+      <h1 class="local-hub__title">Local classes</h1>
+      <p class="local-hub__lede">
+        We run this series in several cities. Pick yours to see the venue address, schedule and speakers, and
+        to send a message to the local organizers.
+      </p>
+      <button type="button" class="btn btn--primary" id="open-city-modal">Choose your city</button>
+
+      <noscript>
+        <div class="local-hub__noscript">
+          <p>Select a city:</p>
+          <ul>
+            {% for c in cities %}
+              <li><a href="/local-classes/{{ c.slug }}/">{{ c.city }}{% if c.region %}, {{ c.region }}{% endif %}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </noscript>
+    </div>
+  </header>
+</div>
+
+<dialog class="city-modal" id="city-modal" aria-labelledby="city-modal-title">
+  <div class="city-modal__inner">
+    <header class="city-modal__head">
+      <h2 id="city-modal-title">Where are you joining from?</h2>
+      <p class="city-modal__sub">You’ll go to that city’s page with full details and the contact form.</p>
+    </header>
+    <ul class="city-modal__list" role="list">
+      {% for c in cities %}
+        <li>
+          <a class="city-modal__choice" href="/local-classes/{{ c.slug }}/">
+            <span class="city-modal__choice-city">{{ c.city }}</span>
+            {% if c.region %}
+              <span class="city-modal__choice-region">{{ c.region }}</span>
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <form method="dialog" class="city-modal__actions">
+      <button type="submit" class="btn btn--ghost city-modal__cancel">Cancel</button>
+    </form>
+  </div>
+</dialog>
+
+<script>
+  (function () {
+    var dialog = document.getElementById("city-modal");
+    var openBtn = document.getElementById("open-city-modal");
+    if (!dialog || !openBtn || typeof dialog.showModal !== "function") return;
+
+    function openModal() {
+      dialog.showModal();
+      var first = dialog.querySelector(".city-modal__choice");
+      if (first) first.focus();
+    }
+
+    openBtn.addEventListener("click", openModal);
+    openModal();
+
+    dialog.addEventListener("click", function (ev) {
+      if (ev.target === dialog) {
+        dialog.close();
+      }
+    });
+  })();
+</script>

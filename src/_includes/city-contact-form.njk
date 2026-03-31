@@ -1,0 +1,49 @@
+<section class="section city-page__contact" id="contact" aria-labelledby="city-contact-title">
+  <div class="container">
+    <header class="section__head">
+      <h2 id="city-contact-title">Contact us</h2>
+      <p>Sign up for information and updates about the upcoming classes in {{ city.city }}.</p>
+    </header>
+
+    <form
+      class="contact-form"
+      name="{{ city.netlifyFormName }}"
+      method="POST"
+      action="/thanks/"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <p class="contact-form__hp">
+        <label>
+          Do not fill this out if you are human:
+          <input name="bot-field" tabindex="-1" autocomplete="off" />
+        </label>
+      </p>
+
+      <input type="hidden" name="city-slug" value="{{ city.slug }}" />
+      <input type="hidden" name="city-label" value="{{ city.city }}{% if city.region %}, {{ city.region }}{% endif %}" />
+
+      <div class="contact-form__field">
+        <label for="contact-name-{{ city.slug }}">Name</label>
+        <input id="contact-name-{{ city.slug }}" name="name" type="text" autocomplete="name" required />
+      </div>
+
+      <div class="contact-form__field">
+        <label for="contact-email-{{ city.slug }}">Email</label>
+        <input id="contact-email-{{ city.slug }}" name="email" type="email" autocomplete="email" required />
+      </div>
+
+      <div class="contact-form__field">
+        <label for="contact-phone-{{ city.slug }}">Phone <span class="contact-form__hint">(optional)</span></label>
+        <input id="contact-phone-{{ city.slug }}" name="phone" type="tel" autocomplete="tel" />
+      </div>
+
+      <div class="contact-form__field">
+        <label for="contact-message-{{ city.slug }}">Message</label>
+        <textarea id="contact-message-{{ city.slug }}" name="message" rows="5" required></textarea>
+      </div>
+
+      <button class="btn btn--primary" type="submit">Send</button>
+    </form>
+  </div>
+</section>

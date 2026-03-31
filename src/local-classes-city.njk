@@ -1,0 +1,74 @@
+---
+pagination:
+  data: cities
+  size: 1
+  alias: city
+permalink: "local-classes/{{ city.slug }}/index.html"
+layout: base.njk
+eleventyExcludeFromCollections: true
+---
+
+<article class="city-page">
+  <header class="city-page__hero section">
+    <div class="container">
+      <nav class="city-page__crumb" aria-label="Breadcrumb">
+        <a href="/local-classes/">Local classes</a>
+        <span aria-hidden="true"> / </span>
+        <span>{{ city.city }}{% if city.region %}, {{ city.region }}{% endif %}</span>
+      </nav>
+      <h1 class="city-page__title">{{ city.city }}</h1>
+      {% if city.region %}
+        <p class="city-page__region">{{ city.region }}</p>
+      {% endif %}
+    </div>
+  </header>
+
+  <section class="section city-page__venue" aria-labelledby="venue-title">
+    <div class="container">
+      <h2 id="venue-title">Venue</h2>
+      <div class="city-page__address-block">
+        {% if city.venueName %}
+          <p class="city-page__venue-name">{{ city.venueName }}</p>
+        {% endif %}
+        <address class="city-page__address">
+          {% for line in city.addressLines %}
+            {{ line }}{% if not loop.last %}<br />{% endif %}
+          {% endfor %}
+        </address>
+        {% if city.mapUrl %}
+          <p class="city-page__map-link">
+            <a href="{{ city.mapUrl }}" rel="noopener noreferrer">Open in Maps</a>
+          </p>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section city-page__schedule" aria-labelledby="schedule-title">
+    <div class="container">
+      <h2 id="schedule-title">Class schedule</h2>
+      {% if city.scheduleIntro %}
+        <p class="city-page__schedule-intro">{{ city.scheduleIntro }}</p>
+      {% endif %}
+      <ol class="city-page__sessions">
+        {% for session in city.sessions %}
+          <li class="city-page__session">
+            <h3 class="city-page__session-title">{{ session.title }}</h3>
+            <dl class="city-page__session-meta">
+              <div>
+                <dt>When</dt>
+                <dd>{{ session.when }}</dd>
+              </div>
+              <div>
+                <dt>Speaker</dt>
+                <dd>{{ session.speaker }}</dd>
+              </div>
+            </dl>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  {% include "city-contact-form.njk" %}
+</article>

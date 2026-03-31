@@ -1,0 +1,250 @@
+@use "sass:color";
+@use "variables";
+
+.local-hub__intro {
+  padding-bottom: 2rem;
+}
+
+.local-hub__title {
+  font-family: variables.$font-family-display;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.local-hub__lede {
+  max-width: 60ch;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.local-hub__noscript {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid variables.$border-color;
+  max-width: 60ch;
+
+  ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.25rem;
+  }
+}
+
+.city-modal {
+  padding: 0;
+  border: 1px solid variables.$border-color;
+  border-radius: 0.5rem;
+  max-width: min(36rem, calc(100vw - 2rem));
+  background: variables.$background-color;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+
+  &::backdrop {
+    background: rgba(10, 9, 9, 0.45);
+  }
+}
+
+.city-modal__inner {
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.city-modal__head {
+  margin-bottom: 1.25rem;
+}
+
+.city-modal__head h2 {
+  font-family: variables.$font-family-display;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.city-modal__sub {
+  margin: 0;
+  color: variables.$light-text;
+  font-size: 0.98rem;
+  max-width: 52ch;
+}
+
+.city-modal__list {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.city-modal__choice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.35rem;
+  border: 1px solid variables.$border-color;
+  text-decoration: none;
+  color: variables.$text-color;
+  font-weight: 700;
+  background: variables.$light-background;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+
+  &:hover {
+    border-color: variables.$primary-color;
+    background: color.change(variables.$primary-color, $alpha: 0.06);
+    box-shadow: 0 2px 10px color.change(variables.$ink, $alpha: 0.08);
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: variables.$primary-color;
+    box-shadow: 0 0 0 4px color.change(variables.$primary-color, $alpha: 0.22);
+  }
+}
+
+.city-modal__choice-city {
+  font-size: 1.05rem;
+}
+
+.city-modal__choice-region {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: variables.$light-text;
+}
+
+.city-modal__actions {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.city-modal__cancel {
+  width: 100%;
+  justify-content: center;
+}
+
+.city-page__hero {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(
+    180deg,
+    color.change(variables.$light-background, $alpha: 0.65),
+    variables.$background-color
+  );
+}
+
+.city-page__crumb {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: variables.$light-text;
+
+  a {
+    color: variables.$primary-color;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.city-page__title {
+  font-family: variables.$font-family-display;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.city-page__region {
+  margin: 0.35rem 0 0;
+  font-weight: 600;
+  color: variables.$light-text;
+}
+
+.city-page__venue h2,
+.city-page__schedule h2 {
+  font-family: variables.$font-family-display;
+}
+
+.city-page__address-block {
+  max-width: 50ch;
+}
+
+.city-page__venue-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.city-page__address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.city-page__map-link {
+  margin: 1rem 0 0;
+
+  a {
+    font-weight: 700;
+    color: variables.$primary-color;
+  }
+}
+
+.city-page__schedule-intro {
+  max-width: 60ch;
+  margin-bottom: 1.5rem;
+}
+
+.city-page__sessions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.city-page__session {
+  border: 1px solid variables.$border-color;
+  border-radius: 0.35rem;
+  padding: 1.1rem 1.2rem;
+  background: variables.$background-color;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.city-page__session-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+  line-height: 1.35;
+}
+
+.city-page__session-meta {
+  margin: 0;
+  display: grid;
+  gap: 0.65rem;
+
+  > div {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 0.5rem 1rem;
+    align-items: start;
+  }
+
+  dt {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: variables.$light-text;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
