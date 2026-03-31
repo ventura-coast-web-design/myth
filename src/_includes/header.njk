@@ -1,14 +1,30 @@
-<header class="site-header">
-    <nav class="nav">
-        <div class="nav__container">
-            <a href="/" class="nav__logo"><img src="/assets/logo.png" alt="The Myth of Satan" /></a>
-            <ul class="nav__menu">
-                <li><a href="/" class="nav__link">Home</a></li>
-                <li><a href="/#classes" class="nav__link">Classes</a></li>
-                <li><a href="/#videos" class="nav__link">Videos</a></li>
-                <li><a href="/#beliefs" class="nav__link">Beliefs</a></li>
-                <li><a href="/local-classes/" class="nav__link">Local classes</a></li>
-            </ul>
-        </div>
-    </nav>
-</header> 
+<div class="nav-primary">
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <div class="nav__container">
+                <a href="/" class="nav__logo"><img src="/assets/logo.png" alt="The Myth of Satan" /></a>
+                <button
+                    class="nav__toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="nav-menu"
+                    aria-label="Open menu"
+                >
+                    <span class="nav__toggle-bar" aria-hidden="true"></span>
+                    <span class="nav__toggle-bar" aria-hidden="true"></span>
+                    <span class="nav__toggle-bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="nav__backdrop" aria-hidden="true"></div>
+    <div class="nav__drawer">
+        <ul id="nav-menu" class="nav__menu">
+            <li><a href="/" class="nav__link">Home</a></li>
+            <li><a href="/#classes" class="nav__link">Classes</a></li>
+            <li><a href="/#videos" class="nav__link">Videos</a></li>
+            <li><a href="/#beliefs" class="nav__link">Beliefs</a></li>
+            <li><a href="/local-classes/" class="nav__link">Local classes</a></li>
+        </ul>
+    </div>
+</div>

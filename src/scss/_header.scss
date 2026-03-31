@@ -1,29 +1,54 @@
 @use "variables";
 @use "mixins";
 
-.site-header {
-  background-color: white;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(20, 17, 16, 0.12);
+// Drawer/backdrop must stay OUTSIDE .site-header: backdrop-filter on the header
+// creates a containing block and breaks viewport-fixed overlay positioning.
+
+body.nav-open {
+  overflow: hidden;
+}
+
+.nav-primary {
+  @include mixins.container;
   position: sticky;
   top: 0;
   z-index: 10001;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(20, 17, 16, 0.12);
+
+  @include mixins.responsive(variables.$breakpoint-md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+
+.site-header {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+
+  @include mixins.responsive(variables.$breakpoint-md) {
+    flex: 0 0 auto;
+  }
 }
 
 .nav {
-  @include mixins.container;
-
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
     padding: 1rem 0;
+    position: relative;
   }
 
   &__logo {
     display: inline-flex;
     align-items: center;
     line-height: 0;
+    position: relative;
+    z-index: 10004;
 
     img {
       display: block;
@@ -33,20 +58,140 @@
     }
   }
 
+  &__backdrop {
+    display: none;
+
+    @media (max-width: #{variables.$breakpoint-md - 0.02px}) {
+      display: block;
+      position: fixed;
+      inset: 0;
+      z-index: 10002;
+      background: rgba(10, 9, 9, 0.45);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+
+      body.nav-open & {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+    }
+  }
+
+  &__drawer {
+    @media (max-width: #{variables.$breakpoint-md - 0.02px}) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10003;
+      width: min(18.5rem, 88vw);
+      max-width: 100%;
+      background: #fff;
+      border-left: 1px solid rgba(20, 17, 16, 0.12);
+      box-shadow: -8px 0 32px rgba(10, 9, 9, 0.12);
+      padding: max(1.25rem, env(safe-area-inset-top)) 1.25rem 1.5rem max(1.25rem, env(safe-area-inset-right));
+      transform: translateX(100%);
+      transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+
+      body.nav-open & {
+        transform: translateX(0);
+      }
+    }
+
+    @include mixins.responsive(variables.$breakpoint-md) {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      min-width: 0;
+      position: static;
+      width: auto;
+      max-width: none;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      transform: none;
+      overflow: visible;
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    flex-shrink: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: variables.$text-color;
+    z-index: 10004;
+    position: relative;
+
+    &:focus-visible {
+      outline: 2px solid variables.$primary-color;
+      outline-offset: 4px;
+    }
+
+    @include mixins.responsive(variables.$breakpoint-md) {
+      display: none;
+    }
+  }
+
+  &__toggle-bar {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+  body.nav-open &__toggle-bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  body.nav-open &__toggle-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  body.nav-open &__toggle-bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
   &__menu {
     display: flex;
     list-style: none;
-    gap: 1.2rem;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0.25rem;
 
     @include mixins.responsive(variables.$breakpoint-md) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
       gap: 2.2rem;
     }
   }
 
   &__link {
+    display: block;
     color: variables.$text-color;
     font-family: variables.$font-family-display;
     font-weight: 600;
@@ -54,10 +199,23 @@
     letter-spacing: 0.07em;
     text-transform: uppercase;
     transition: color 0.2s ease;
-    padding: 0.35rem 0;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid rgba(20, 17, 16, 0.08);
+
+    @include mixins.responsive(variables.$breakpoint-md) {
+      padding: 0.35rem 0;
+      border-bottom: none;
+    }
 
     &:hover {
       color: variables.$primary-color;
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__backdrop,
+  .nav__drawer {
+    transition-duration: 0.01ms !important;
   }
 }
