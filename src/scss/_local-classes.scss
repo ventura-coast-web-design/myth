@@ -33,10 +33,17 @@
 }
 
 .city-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
   padding: 0;
   border: 1px solid variables.$border-color;
   border-radius: 0.5rem;
   max-width: min(36rem, calc(100vw - 2rem));
+  max-height: min(calc(100vh - 2rem), 90vh);
+  overflow-y: auto;
   background: variables.$background-color;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
 
