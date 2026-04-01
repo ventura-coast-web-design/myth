@@ -29,6 +29,11 @@
       </div>
 
       <div class="contact-form__field">
+        <label for="contact-city-{{ city.slug }}">City</label>
+        <input id="contact-city-{{ city.slug }}" name="city" type="text" autocomplete="city" required />
+      </div>
+
+      <div class="contact-form__field">
         <label for="contact-email-{{ city.slug }}">Email</label>
         <input id="contact-email-{{ city.slug }}" name="email" type="email" autocomplete="email" required />
       </div>
