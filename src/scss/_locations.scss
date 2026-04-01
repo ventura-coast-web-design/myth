@@ -1,0 +1,124 @@
+@use "sass:color";
+@use "variables";
+@use "mixins";
+
+.locations__list {
+  list-style: none;
+  display: grid;
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+
+  @include mixins.responsive(variables.$breakpoint-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.location-card {
+  background-color: variables.$background-color;
+  border: 1px solid variables.$border-color;
+  border-radius: 0.35rem;
+  padding: 1.15rem 1.2rem 1.2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+.location-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: linear-gradient(
+    180deg,
+    variables.$primary-color 0%,
+    color.adjust(variables.$primary-color, $lightness: -12%) 100%
+  );
+}
+
+.location-card__title {
+  margin: 0 0 0.5rem;
+  padding-left: 0.1rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.location-card__venue {
+  margin: 0 0 0.65rem;
+  padding-left: 0.1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.location-card__address {
+  margin: 0 0 1rem;
+  padding-left: 0.1rem;
+  font-style: normal;
+  line-height: 1.6;
+  color: variables.$text-color;
+}
+
+.location-card__actions {
+  margin: 0;
+  padding-left: 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.1rem;
+  align-items: center;
+}
+
+.location-card__link {
+  font-weight: 700;
+  color: variables.$primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.location-card__link--primary {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: variables.$font-family-display;
+  font-size: 0.9rem;
+}
+
+.locations__virtual-cta {
+  margin: 1rem 0 0;
+}
+
+.locations__virtual {
+  margin-top: 2rem;
+  padding: 1.35rem 1.5rem;
+  border-radius: 0.35rem;
+  border: 1px solid variables.$border-color;
+  background: color.change(variables.$light-background, $alpha: 0.85);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  max-width: 62ch;
+}
+
+.locations__virtual h3 {
+  font-family: variables.$font-family-display;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+}
+
+.locations__virtual > p {
+  margin: 0 0 0.75rem;
+  line-height: 1.55;
+  color: variables.$text-color;
+}
+
+.locations__virtual > p:last-child {
+  margin-bottom: 0;
+}
+
+.locations__virtual-actions {
+  margin: 1rem 0 0;
+}

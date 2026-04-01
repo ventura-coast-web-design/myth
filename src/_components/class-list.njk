@@ -1,35 +1,43 @@
-<section id="classes" class="section classes" aria-labelledby="classes-title">
+<section id="locations" class="section locations" aria-labelledby="locations-title">
   <div class="container">
     <header class="section__head">
-      <h2 id="classes-title">Class Series</h2>
-      <p>Six sessions presenting the Bible’s teaching, line by line, and answering common questions.</p>
+      <h2 id="locations-title">Where classes meet</h2>
     </header>
 
-    <ol class="classes__list">
-      <li class="class-card">
-        <h3>Class 1: The Adversary in Scripture</h3>
-        <p>How the Bible uses the idea of opposition, and why it’s not the supernatural being many expect.</p>
-      </li>
-      <li class="class-card">
-        <h3>Class 2: The Serpent and the Promise</h3>
-        <p>Understanding Genesis, Satan-as-a-person claims, and the hope God builds for mankind.</p>
-      </li>
-      <li class="class-card">
-        <h3>Class 3: “Lucifer” and Misread Prophecy</h3>
-        <p>What Isaiah 14 is actually talking about, and how context changes the meaning.</p>
-      </li>
-      <li class="class-card">
-        <h3>Class 4: Satan in Job and Zechariah</h3>
-        <p>Why the “accuser” language is best understood within God’s purpose and authority.</p>
-      </li>
-      <li class="class-card">
-        <h3>Class 5: The New Testament’s Use of “Satan”</h3>
-        <p>Examining references to adversary, temptation, and opposition to God’s ways.</p>
-      </li>
-      <li class="class-card">
-        <h3>Class 6: Hope, Resurrection, and Kingdom</h3>
-        <p>Christadelphian beliefs about death, resurrection, and the Kingdom of God on earth.</p>
-      </li>
-    </ol>
+    <ul class="locations__list" role="list">
+      {% for place in cities %}
+        <li class="location-card">
+          <h3 class="location-card__title">
+            {{ place.city }}{% if place.region %}, {{ place.region }}{% endif %}
+          </h3>
+          {% if place.venueName %}
+            <p class="location-card__venue">{{ place.venueName }}</p>
+          {% endif %}
+          <address class="location-card__address">
+            {% for line in place.addressLines %}
+              {{ line }}{% if not loop.last %}<br />{% endif %}
+            {% endfor %}
+          </address>
+          <p class="location-card__actions">
+            <a class="location-card__link location-card__link--primary" href="/local-classes/{{ place.slug }}/">
+              Location details
+            </a>
+            {% if place.mapUrl %}
+              <a class="location-card__link" href="{{ place.mapUrl }}" rel="noopener noreferrer">Open in Maps</a>
+            {% endif %}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <aside class="locations__virtual" aria-labelledby="virtual-option-title">
+      <h3 id="virtual-option-title">Can’t attend in person?</h3>
+      <p>
+        Join online instead. We send a link so you can participate remotely from wherever you are.
+      </p>
+      <p class="locations__virtual-actions">
+        <a class="btn btn--primary" href="/virtual-classes/#virtual-signup">Sign up for the virtual link</a>
+      </p>
+    </aside>
   </div>
 </section>

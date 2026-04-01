@@ -1,0 +1,59 @@
+---
+layout: base.njk
+title: "Virtual classes"
+description: "Sign up to receive the link for remote Myth of Satan classes."
+permalink: /virtual-classes/
+---
+
+<div class="container section virtual-page">
+  <h1 class="virtual-page__title">Virtual classes</h1>
+  <p class="virtual-page__intro">
+    If you can’t join us at a local venue, you can still take part. Submit this form and organizers
+    will send you the link to join each session online.
+  </p>
+
+  <section class="virtual-page__form-wrap" id="virtual-signup" aria-labelledby="virtual-form-title">
+    <h2 id="virtual-form-title" class="virtual-page__form-heading">Sign up for the virtual link</h2>
+    <form
+      class="contact-form"
+      name="virtual-class-signup"
+      method="POST"
+      action="/thanks/"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <p class="contact-form__hp">
+        <label>
+          Do not fill this out if you are human:
+          <input name="bot-field" tabindex="-1" autocomplete="off" />
+        </label>
+      </p>
+
+      <input type="hidden" name="signup-type" value="virtual" />
+
+      <div class="contact-form__field">
+        <label for="virtual-name">Name</label>
+        <input id="virtual-name" name="name" type="text" autocomplete="name" required />
+      </div>
+
+      <div class="contact-form__field">
+        <label for="virtual-email">Email</label>
+        <input id="virtual-email" name="email" type="email" autocomplete="email" required />
+      </div>
+
+      <div class="contact-form__field">
+        <label for="virtual-phone">Phone <span class="contact-form__hint">(optional)</span></label>
+        <input id="virtual-phone" name="phone" type="tel" autocomplete="tel" />
+      </div>
+
+      <div class="contact-form__field">
+        <label for="virtual-notes">
+          Notes <span class="contact-form__hint">(optional — time zone, questions, etc.)</span>
+        </label>
+        <textarea id="virtual-notes" name="message" rows="4"></textarea>
+      </div>
+
+      <button class="btn btn--primary" type="submit">Request virtual link</button>
+    </form>
+  </section>
+</div>

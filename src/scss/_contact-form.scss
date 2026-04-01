@@ -78,3 +78,28 @@
 .contact p {
   max-width: 62ch;
 }
+
+.virtual-page__title {
+  font-family: variables.$font-family-display;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.virtual-page__intro {
+  max-width: 62ch;
+  margin: 0 0 2rem;
+  line-height: 1.6;
+}
+
+.virtual-page__form-wrap {
+  max-width: 62ch;
+}
+
+.virtual-page__form-heading {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0 0 1rem;
+}
