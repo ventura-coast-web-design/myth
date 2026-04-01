@@ -80,6 +80,31 @@
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
 }
 
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.hero__cta-register {
+  width: 100%;
+  justify-content: center;
+  padding-block: 1.05rem;
+  padding-inline: 1.5rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+}
+
+.hero__cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  justify-content: center;
+}
+
 @media (min-width: variables.$breakpoint-md) {
   .hero__inner {
     grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
@@ -106,7 +131,7 @@
     max-width: 100%;
   }
 
-  .hero__cta {
+  .hero__cta-row {
     justify-content: flex-start;
   }
 }
@@ -123,14 +148,6 @@
   font-size: 1.0625rem;
   line-height: 1.7;
   margin-bottom: 0;
-}
-
-.hero__cta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-  margin-top: 2rem;
-  justify-content: center;
 }
 
 .hero .btn--primary {
