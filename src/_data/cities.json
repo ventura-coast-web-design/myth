@@ -182,5 +182,26 @@
         "speaker": "Speaker TBC"
       }
     ]
+  },
+  {
+    "slug": "Pomona",
+    "city": "Pomona",
+    "region": "CA",
+    "venueName": "Venue — update with hall or meeting address",
+    "addressLines": [
+      "Address line 1",
+      "Pomona, CA"
+    ],
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pomona%2C+CA",
+    "mapEmbedQuery": "Pomona City Hall, Pomona, CA 91766",
+    "netlifyFormName": "local-contact-pomona",
+    "scheduleIntro": "Schedule and times — confirm locally (times are usually evenings, Pacific).",
+    "sessions": [
+      {
+        "title": "Class 1: The Adversary in Scripture",
+        "when": "Date TBC",
+        "speaker": "Speaker TBC"
+      }
+    ]
   }
 ]
