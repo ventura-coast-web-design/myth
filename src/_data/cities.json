@@ -8,7 +8,7 @@
       "4201 Guardian Street",
       "Simi Valley, CA 93063"
     ],
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Simi+Valley%2C+CA",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.272937473127!2d-118.71361778839197!3d34.267091606242474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e829d34000f4a3%3A0x999718823c39b9b6!2sRancho%20Simi%20Recreation%20and%20Park%20District%20Activity%20Center!5e0!3m2!1sen!2sus!4v1783048342613!5m2!1sen!2sus",
     "mapEmbedQuery": "Rancho Simi Recreation and Park District, Guardian Building, Simi Valley, CA 93063",
     "netlifyFormName": "local-contact-simi-valley",
     "speakerSlug": "jason-hensley",
@@ -30,7 +30,7 @@
       "101 East Wilbur Road",
       "Thousand Oaks, CA 91360"
     ],
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Thousand+Oaks%2C+CA",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.4147519859603!2d-118.87575888839473!3d34.18687791049652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e83b618fcf8ee9%3A0xa77412e970ca507f!2sThousand%20Oaks%20Christadelphian%20Ecclesia!5e0!3m2!1sen!2sus!4v1783049011244!5m2!1sen!2sus",
     "mapEmbedQuery": "Thousand Oaks Christadelphian Hall, Thousand Oaks, CA 91360",
     "netlifyFormName": "local-contact-thousand-oaks",
     "speakerSlug": "jason-robinson",
@@ -52,7 +52,7 @@
       "10210 Commerce Ave.",
       "Tujunga, CA 91042"
     ],
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Verdugo+City%2C+CA",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.7624107158495!2d-118.29087138839232!3d34.25460570690514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2eb509bb245af%3A0x515f3611ac409975!2sVerdugo%20Hills%20Christadelphians!5e0!3m2!1sen!2sus!4v1783049047609!5m2!1sen!2sus",
     "mapEmbedQuery": "Verdugo Hills Christadelphian Hall, Tujunga, CA 91042",
     "netlifyFormName": "local-contact-verdugo",
     "speakerSlug": "christian-russell",
@@ -74,7 +74,7 @@
       "10721 Pioneer Blvd.",
       "Santa Fe Springs, CA 90670"
     ],
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Los+Angeles%2C+CA",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.2015259724544!2d-118.08483088840325!3d33.93594452375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d2f184e87197%3A0x74ec2855f7dad0f2!2sLos%20Angeles%20Christadelphian%20Church!5e0!3m2!1sen!2sus!4v1783049153412!5m2!1sen!2sus",
     "mapEmbedQuery": "Los Angeles Christadelphian Hall, Santa Fe Springs, CA 90670",
     "netlifyFormName": "local-contact-los-angeles",
     "speakerSlug": "christian-russell",
@@ -96,7 +96,7 @@
       "890 South Gibbs St.",
       "Pomona, CA 91766"
     ],
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pomona%2C+CA",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.688708560307!2d-117.75005428839916!3d34.05185541763825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32df21fa15397%3A0xb366721e290c4943!2sPomona%20Christadelphian%20Chapel!5e0!3m2!1sen!2sus!4v1783049187698!5m2!1sen!2sus",
     "mapEmbedQuery": "Pomona Christadelphian Hall, Pomona, CA 91766",
     "netlifyFormName": "local-contact-pomona",
     "speakerSlug": "allen-laban",
@@ -118,7 +118,7 @@
       "651 West 7th Ave.",
       "San Diego, CA 92025"
     ],
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=San+Diego%2C+CA",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3341.884436937841!2d-117.08804578843096!3d33.11212186667433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf486b4b42cd9%3A0x22efd0fc177a0a7c!2sEscondido%20Christadelphians!5e0!3m2!1sen!2sus!4v1783049226914!5m2!1sen!2sus",
     "mapEmbedQuery": "San Diego Christadelphian Hall, San Diego, CA 92025",
     "netlifyFormName": "local-contact-san-diego",
     "speakerSlug": "allen-laban",
@@ -140,7 +140,7 @@
       "1536 James Ave.",
       "Redwood City, CA 94062"
     ],
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=San+Jose%2C+CA",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.349708780074!2d-122.24801168827626!3d37.47607312919323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa3c982c90aff%3A0xedb5234cd559e859!2sChristadelphians%20of%20the%20San%20Francisco%20Peninsula!5e0!3m2!1sen!2sus!4v1783049268746!5m2!1sen!2sus",
     "mapEmbedQuery": "San Francisco Peninsula Christadelphian Hall, Redwood City, CA 94062",
     "netlifyFormName": "local-contact-san-francisco",
     "speakerSlug": "james-robinson",
