@@ -4,7 +4,8 @@
   "description": "A simple Eleventy and SCSS template for static websites",
   "main": "index.js",
   "scripts": {
-    "build": "npm run scss:build && eleventy",
+    "build": "npm run build:email-templates && npm run scss:build && eleventy",
+    "build:email-templates": "node scripts/build-email-templates.js",
     "dev": "npm-run-all --parallel scss:watch eleventy:serve",
     "watch": "npm-run-all --parallel scss:watch eleventy --watch",
     "clean": "rm -rf _site",

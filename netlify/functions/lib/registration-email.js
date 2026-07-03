@@ -1,10 +1,7 @@
-const fs = require("fs");
-const path = require("path");
 const nodemailer = require("nodemailer");
 
 const cities = require("../../../src/_data/cities.json");
-
-const TEMPLATE_DIR = path.join(__dirname, "emails");
+const templates = require("./email-templates");
 const REGISTRATION_FORM_PREFIX = "local-contact-";
 
 function parseSessionWhen(when) {
@@ -67,13 +64,6 @@ function buildRegistrationEmailValues(formData) {
   };
 }
 
-function loadTemplates() {
-  return {
-    html: fs.readFileSync(path.join(TEMPLATE_DIR, "registration-confirmed.html"), "utf8"),
-    text: fs.readFileSync(path.join(TEMPLATE_DIR, "registration-confirmed.txt"), "utf8"),
-  };
-}
-
 function createTransport() {
   const host = process.env.SMTP_HOST || "mail.privateemail.com";
   const port = Number(process.env.SMTP_PORT || 465);
@@ -105,7 +95,6 @@ async function sendRegistrationEmail(formData) {
   }
 
   const values = buildRegistrationEmailValues(formData);
-  const templates = loadTemplates();
   const from = process.env.SMTP_FROM || process.env.SMTP_USER;
 
   const transport = createTransport();
