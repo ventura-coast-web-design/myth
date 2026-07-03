@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 
 const cities = require("../../../src/_data/cities.json");
 
-const TEMPLATE_DIR = path.join(__dirname, "../../../emails");
+const TEMPLATE_DIR = path.join(__dirname, "emails");
 const REGISTRATION_FORM_PREFIX = "local-contact-";
 
 function parseSessionWhen(when) {
