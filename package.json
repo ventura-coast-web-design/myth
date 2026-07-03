@@ -15,6 +15,9 @@
   "keywords": ["eleventy", "scss", "static-site", "template"],
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^7.0.5"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "sass": "^1.69.5",

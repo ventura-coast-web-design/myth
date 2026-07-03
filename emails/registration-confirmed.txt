@@ -1,0 +1,20 @@
+Hello {{FirstName}},
+
+Thank you for registering for Exposing the Satan Myth in {{Location}}. We're glad you'll be joining us!
+
+Registration details
+
+Name: {{FirstName}} {{LastName}}
+Location: {{Location}}
+Date: {{SeminarDate}}
+Time: {{SeminarTime}}
+Venue: {{VenueName}}
+Address: {{VenueAddress}}
+Number attending: {{AttendeeCount}}
+
+Dress for the event is casual, and you do not need to bring anything with you. A Bible may be helpful, but it is not required.
+
+If you have any questions before the event, simply reply to this email.
+
+Sincerely,
+The Exposing the Satan Myth Team
