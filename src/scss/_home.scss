@@ -11,3 +11,10 @@
   background-color: color.mix(variables.$light-background, variables.$ink, 88%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
+
+.general-contact-form {
+  .section__head,
+  .contact-form {
+    margin-inline: auto;
+  }
+}
