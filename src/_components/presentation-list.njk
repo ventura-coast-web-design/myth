@@ -23,8 +23,9 @@
             <a class="location-card__link location-card__link--primary" href="/local-presentations/{{ place.slug }}/">
               Location details
             </a>
-            {% if place.mapUrl %}
-              <a class="location-card__link" href="{{ place.mapUrl }}" rel="noopener noreferrer">Open in Maps</a>
+            {% set mapLinkUrl = place | mapsLinkUrl %}
+            {% if mapLinkUrl %}
+              <a class="location-card__link" href="{{ mapLinkUrl }}" rel="noopener noreferrer" target="_blank">Open in Maps</a>
             {% endif %}
           </p>
         </li>

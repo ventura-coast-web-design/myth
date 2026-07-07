@@ -96,13 +96,15 @@ eleventyExcludeFromCollections: true
                 {{ line }}{% if not loop.last %}<br />{% endif %}
               {% endfor %}
             </address>
-            {% if city.mapUrl %}
+            {% set mapLinkUrl = city | mapsLinkUrl %}
+            {% if mapLinkUrl %}
               <p class="city-page__map-link">
-                <a href="{{ city.mapUrl }}" rel="noopener noreferrer">Open in Maps</a>
+                <a href="{{ mapLinkUrl }}" rel="noopener noreferrer" target="_blank">Open in Maps</a>
               </p>
             {% endif %}
           </div>
         </div>
+        {% set mapEmbedSrc = city | mapsEmbedSrc %}
         {% if mapEmbedSrc %}
           <div class="city-page__map">
             <iframe

@@ -27,6 +27,43 @@ module.exports = function(eleventyConfig) {
     return pageUrl === path || pageUrl.startsWith(path);
   });
 
+  eleventyConfig.addFilter("mapsLinkUrl", function (city) {
+    if (!city) return "";
+
+    const query = city.mapEmbedQuery;
+    if (query && typeof query === "string") {
+      return (
+        "https://www.google.com/maps/search/?api=1&query=" +
+        encodeURIComponent(query.trim())
+      );
+    }
+
+    if (city.mapUrl && !city.mapUrl.includes("/embed")) {
+      return city.mapUrl;
+    }
+
+    return "";
+  });
+
+  eleventyConfig.addFilter("mapsEmbedSrc", function (city) {
+    if (!city) return "";
+
+    if (city.mapUrl && city.mapUrl.includes("/embed")) {
+      return city.mapUrl;
+    }
+
+    const query = city.mapEmbedQuery;
+    if (query && typeof query === "string") {
+      return (
+        "https://www.google.com/maps?q=" +
+        encodeURIComponent(query.trim()) +
+        "&output=embed"
+      );
+    }
+
+    return "";
+  });
+
   return {
     dir: {
       input: "src",
