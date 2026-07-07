@@ -1,39 +1,40 @@
 [
   {
-    "slug": "a-future-world-free-of-sin-and-death",
-    "title": "A future World free of Sin and Death",
-    "youtubeId": "TqnfOfuZCN8",
-    "transcriptSlug": "world-free-of-sin-and-death"
-  },
-  {
-    "slug": "jesus-destroyed-the-devil",
-    "title": "Jesus Destroyed the Works of the Devil",
-    "youtubeId": "blbxvNWnNZg"
-  },
-  {
-    "slug": "lucifer",
-    "title": "Lucifer",
-    "youtubeId": "190f_v9PNRI"
-  },
-  {
-    "slug": "temptations-of-jesus-in-the-wilderness",
-    "title": "Temptation of Jesus in the Wilderness",
-    "youtubeId": "KKtjLxcgJ64",
-    "transcriptSlug": "temptation-in-wilderness"
+    "slug": "the-origin-of-the-of-satan-and-the-devil",
+    "title": "The Origin of Satan and the Devil",
+    "youtubeId": "88N_lojgRlg"
   },
   {
     "slug": "hell",
     "title": "Hell",
-    "youtubeId": "vzzUCL9_03s"
+    "youtubeId": "QfCmyn_S_rU"
   },
   {
-    "slug": "about-overview",
-    "title": "About Overview",
-    "youtubeId": "P81E_5MLcDM"
+    "slug": "lucifer",
+    "title": "Lucifer",
+    "youtubeId": "w147ckXdaPs"
   },
   {
-    "slug": "the-origin-of-the-of-satan-and-the-devil",
-    "title": "The origin of the of satan and the devil",
-    "youtubeId": "NctTgqqMVfM"
+    "slug": "demons",
+    "title": "Demons",
+    "youtubeId": "tkETS8gKQwc",
+    "transcript": false
+  },
+  {
+    "slug": "temptations-of-jesus-in-the-wilderness",
+    "title": "The Temptation in the Wilderness",
+    "youtubeId": "Y8BOW6Fw9Ic",
+    "transcriptSlug": "temptation-in-wilderness"
+  },
+  {
+    "slug": "jesus-destroyed-the-devil",
+    "title": "Jesus Destroyed the Works of the Devil",
+    "youtubeId": "ih26ryv5Fv8"
+  },
+  {
+    "slug": "a-future-world-free-of-sin-and-death",
+    "title": "A World Free of Sin and Death",
+    "youtubeId": "Kh8pcYt37Cs",
+    "transcriptSlug": "world-free-of-sin-and-death"
   }
 ]
