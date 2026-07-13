@@ -334,17 +334,24 @@
 
 .video-viewer__stage {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "embed embed"
+    "prev next";
   gap: 0.65rem;
   align-items: stretch;
 
   @include mixins.responsive(variables.$breakpoint-md) {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-areas: "prev embed next";
     gap: 1rem;
   }
 }
 
 .video-viewer__embed {
+  grid-area: embed;
   position: relative;
+  width: 100%;
   min-width: 0;
   border: 2px solid variables.$border-strong;
   border-radius: 2px;
@@ -366,8 +373,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 2.5rem;
-  padding: 0 0.35rem;
+  min-height: 3rem;
+  padding: 0.35rem 0.75rem;
   font-size: 2.25rem;
   line-height: 1;
   font-weight: 700;
@@ -393,8 +400,18 @@
     outline-offset: 2px;
   }
 
+  &--prev {
+    grid-area: prev;
+  }
+
+  &--next {
+    grid-area: next;
+  }
+
   @include mixins.responsive(variables.$breakpoint-md) {
     min-width: 3.25rem;
+    min-height: 0;
+    padding: 0 0.35rem;
     font-size: 2.75rem;
   }
 }
