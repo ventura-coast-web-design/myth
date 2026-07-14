@@ -50,11 +50,11 @@ $basf-panel-bg: #e7e5e4;
   }
 
   .page-header--bright {
-    font-size: 4rem;
+    font-size: clamp(1.85rem, 9.5vw, 4rem);
     font-weight: 400;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding: 1rem 2rem;
+    padding: 1rem clamp(0.75rem, 3vw, 2rem);
     background: linear-gradient(
       125deg,
       color.adjust($bright-bg-mid, $lightness: -4%) 0%,
