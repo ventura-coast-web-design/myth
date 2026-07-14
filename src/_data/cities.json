@@ -44,8 +44,8 @@
     ]
   },
   {
-    "slug": "verdugo",
-    "city": "Verdugo",
+    "slug": "tujunga",
+    "city": "Tujunga",
     "region": "CA",
     "venueName": "Verdugo Hills Christadelphian Hall",
     "addressLines": [
@@ -54,7 +54,7 @@
     ],
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3297.7624107158495!2d-118.29087138839232!3d34.25460570690514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2eb509bb245af%3A0x515f3611ac409975!2sVerdugo%20Hills%20Christadelphians!5e0!3m2!1sen!2sus!4v1783049047609!5m2!1sen!2sus",
     "mapEmbedQuery": "Verdugo Hills Christadelphian Hall, Tujunga, CA 91042",
-    "netlifyFormName": "local-contact-verdugo",
+    "netlifyFormName": "local-contact-tujunga",
     "speakerSlug": "christian",
     "scheduleIntro": "Schedule and time",
     "sessions": [
