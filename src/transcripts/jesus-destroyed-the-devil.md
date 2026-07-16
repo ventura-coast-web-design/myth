@@ -3,7 +3,7 @@ title: "Jesus Destroyed the Works of the Devil"
 description: "Transcript for the video on Jesus destroying the works of the devil."
 permalink: /transcripts/jesus-destroyed-the-devil/
 videoTitle: "Jesus Destroyed the Works of the Devil"
-youtubeVideoId: "ih26ryv5Fv8"
+youtubeVideoId: "aJrxbVtLBTs"
 backUrl: "/videos/"
 backLabel: "Back to Videos"
 ---

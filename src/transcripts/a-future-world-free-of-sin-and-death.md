@@ -3,7 +3,7 @@ title: "A World Free of Sin and Death"
 description: "Transcript for the video on a future world free of sin and death."
 permalink: /transcripts/world-free-of-sin-and-death/
 videoTitle: "A World Free of Sin and Death"
-youtubeVideoId: "Kh8pcYt37Cs"
+youtubeVideoId: "fpJ9Qp-VER0"
 backUrl: "/videos/"
 backLabel: "Back to Videos"
 ---

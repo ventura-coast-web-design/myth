@@ -3,7 +3,7 @@ title: "Lucifer"
 description: "Transcript for the video on Lucifer."
 permalink: /transcripts/lucifer/
 videoTitle: "Lucifer"
-youtubeVideoId: "w147ckXdaPs"
+youtubeVideoId: "30cs99YMNUU"
 backUrl: "/videos/"
 backLabel: "Back to Videos"
 ---

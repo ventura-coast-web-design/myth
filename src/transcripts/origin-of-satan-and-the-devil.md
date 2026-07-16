@@ -1,9 +1,9 @@
 ---
 title: "The Origin of Satan and the Devil"
 description: "Transcript for the video on the origin of Satan and the Devil."
-permalink: /transcripts/the-origin-of-satan-and-the-devil/
+permalink: /transcripts/origin-of-satan-and-the-devil/
 videoTitle: "The Origin of Satan and the Devil"
-youtubeVideoId: "88N_lojgRlg"
+youtubeVideoId: "jN3J5NxMC50"
 backUrl: "/videos/"
 backLabel: "Back to Videos"
 ---

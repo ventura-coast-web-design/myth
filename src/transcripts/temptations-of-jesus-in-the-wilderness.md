@@ -3,7 +3,7 @@ title: "The Temptation in the Wilderness"
 description: "Transcript for the video on the temptation of Jesus in the wilderness."
 permalink: /transcripts/temptation-in-wilderness/
 videoTitle: "The Temptation in the Wilderness"
-youtubeVideoId: "Y8BOW6Fw9Ic"
+youtubeVideoId: "X9nQvoI8LmI"
 backUrl: "/videos/"
 backLabel: "Back to Videos"
 ---
