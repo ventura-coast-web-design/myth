@@ -10,6 +10,9 @@
           <h3 class="location-card__title">
             {{ place.city }}{% if place.region %}, {{ place.region }}{% endif %}
           </h3>
+          {% if place.sessions and place.sessions[0].date %}
+            <p class="location-card__date">{{ place.sessions[0].date }}</p>
+          {% endif %}
           {% if place.venueName %}
             <p class="location-card__venue">{{ place.venueName }}</p>
           {% endif %}

@@ -37,7 +37,7 @@
 }
 
 .location-card__title {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.35rem;
   padding-left: 0.1rem;
   font-family: variables.$font-family-condensed;
   font-size: 1.2rem;
@@ -45,6 +45,17 @@
   line-height: 1.25;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.location-card__date {
+  margin: 0 0 0.65rem;
+  padding-left: 0.1rem;
+  font-family: variables.$font-family-condensed;
+  font-size: 0.98rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: variables.$accent-yellow;
 }
 
 .location-card__venue {

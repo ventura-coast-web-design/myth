@@ -32,17 +32,19 @@ eleventyExcludeFromCollections: true
         <ol class="city-page__sessions">
           {% for session in city.sessions %}
             <li class="city-page__session">
+              <p class="city-page__session-when">
+                <span class="city-page__session-date">{{ session.date }}</span>
+                {% if session.time %}
+                  <span class="city-page__session-time">{{ session.time }}</span>
+                {% endif %}
+              </p>
               <h3 class="city-page__session-title">{{ session.title }}</h3>
-              <dl class="city-page__session-meta">
-                <div>
-                  <dt>When</dt>
-                  <dd>{{ session.when }}</dd>
-                </div>
-                <div>
-                  <dt>Speaker</dt>
-                  <dd>{{ session.speaker }}</dd>
-                </div>
-              </dl>
+              {% if session.speaker %}
+                <p class="city-page__session-speaker">
+                  <span class="city-page__session-speaker-label">Speaker</span>
+                  {{ session.speaker }}
+                </p>
+              {% endif %}
             </li>
           {% endfor %}
         </ol>
