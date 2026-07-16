@@ -1,52 +1,37 @@
 ---
-title: "A future World free of Sin and Death — video overview (transcript)"
-description: "Transcript for the video on A future World free of Sin and Death "
+title: "A World Free of Sin and Death"
+description: "Transcript for the video on a future world free of sin and death."
 permalink: /transcripts/world-free-of-sin-and-death/
-videoTitle: "A future World free of Sin and Death"
-youtubeVideoId: "IGbjT0MQ-Ew"
+videoTitle: "A World Free of Sin and Death"
+youtubeVideoId: "Kh8pcYt37Cs"
 backUrl: "/videos/"
 backLabel: "Back to Videos"
 ---
 
-The Bible does not teach that there is a supernatural being, or a fallen angel that is nurturing evil in the world. We know that angels are immortal. Immortal beings cannot sin, and are not subject to death. It is completely illogical and inconsistent to believe that there was a rebellion in heaven of an angel, or that God would permit that angel to bring havoc on His creation. **The enemy has always been us.** Sin comes from within us, out of our own hearts.
+# A World Free of Sin and Death
 
-## Imagining a world without sin
+Imagine a world without sin, a world without violence, without corruption, without sorrow, and without death. For most of us that's almost impossible to picture. Everything we've ever experienced has taken place in a world shaped by sin and mortality. Life is temporary, human institutions rise and fall, and every generation eventually passes away.
 
-So, for a moment, try to imagine a world without sin. A world without sorrow and death. It is almost impossible to form a picture in our mind because all we have known is a world of sin, corruption, and death. Life is temporary for all. As the Scripture says, we are like a vapor that is here one moment, and gone the next. Like the grass that rises up in majesty, it soon withers and is blown away.
+Even the Bible often describes our lives as being like a vapor. Here for a moment and then gone, but the scripture goes further to tell us that this present world is not the final chapter of God's plan. In fact, the Bible repeatedly speaks about a future time when sin and death will finally be removed from the earth.
 
-It’s even harder to imagine the world being filled with men and women who only serve God, who are not torn by internal fleshly desires.
+But before we talk about that future, we need to understand something very important about the present world. Many people believe that evil in the world is being driven by a supernatural fallen angel, the devil. Yet in other videos we've explored how the Bible consistently teaches that the real problem lies much closer to home, that sin comes from within the human heart. Our own desires, pride and selfishness, lead people to act in ways that oppose the will of God. That's why the world that we live in is filled with injustice, suffering, and death. But the Bible tells us that this condition won't last forever. It tells us that Jesus Christ is returning to establish a Kingdom that will transform the earth.
 
-But this is exactly world that Jesus Christ is returning to create. We are told that when he returns to the earth, he will set up an everlasting kingdom. The Prophet Daniel spoke of this kingdom. Describing a metallic image that represented the kingdoms of men who would rule over Israel, Daniel assured God’s people that this would end.
+In the book of Daniel, the prophet described a vision of the kingdoms of men, empires that would rise and fall throughout history. But Daniel was also shown something remarkable. He wrote:
 
-> And in the days of those kings the God of heaven will set up a kingdom that shall never be destroyed, nor shall the kingdom be left to another people. It shall break in pieces all these kingdoms and bring them to an end, and it shall stand forever  
-> — Daniel 2:44 (ESV)
+> "And in the days of those kings the God of heaven will set up a Kingdom that shall never be destroyed … It shall break in pieces all these kingdoms and bring them to an end and it shall stand forever."
 
-Jesus will replace all the kingdoms of men. Jesus will usher in righteousness and justice. He will reverse the problems of pollution, hunger, and violence. This transformational process will occur over 1,000 years. Over time, men and women will experience a world where righteousness reigns.
+In other words, the kingdoms of men will eventually be replaced by the Kingdom of God and that Kingdom will be ruled by Jesus Christ.
 
-## The throne that will not end
+The angel Gabriel announced this very promise to Mary before Jesus was born. He said:
 
-The Angel Gabriel spoke to Mary before she conceived Jesus about the role Jesus would play in that kingdom.
+> "You will conceive in your womb and bear a son, and you shall call his name Jesus. He will be great and will be called the son of the Most High. And the Lord God will give to him the throne of his father David, and he will reign over the House of Jacob forever, and of his Kingdom there will be no end."
 
-> And behold, you will conceive in your womb and bear a son, and you shall call his name Jesus. He will be great and will be called the Son of the Most High. And the Lord God will give to him the throne of his father David, and he will reign over the house of Jacob forever, and of his kingdom there will be no end  
-> — Luke 1:31–33 (ESV)
+So, Jesus was not born simply to begin a new religion, he was born to become the future king of the world. And when he returns, he will establish a Kingdom that brings righteousness and justice to the earth. The problems humanity struggles with today, war, corruption, poverty, violence, will finally be addressed under his rule. The Bible also describes a remarkable period during this future Kingdom. It describes the time when Christ will reign on the earth for 1000 years and during that time the world will be transformed. Nations will be governed with justice. Truth will replace deception. Righteousness will begin to shape human society.
 
-As king over all the earth, Jesus will bring about a renovation of the world which not one of us has experienced. But still, during the 1,000-year reign, there will be mortal men, women, and children, inhabiting the earth. They will be ruled over by immortalized saints, who will act in both a spiritual leadership and judicial role. It will be marvelous! The problems that man cannot resolve today will be dissolved by the Lord Jesus Christ.
+Now it is true, that during this one thousand year reign, the earth will still be inhabited by mortal men and women. People will still live ordinary lives, raising families, working, and learning the ways of God. The difference is they will be guided by the rule of Christ and those who have been made immortal through the resurrection. These immortal saints will serve alongside Christ as leaders and judges in the Kingdom. The world will experience something that humanity has never known before and that's a society directed entirely by God's principles. Sin will still exist during this time, but it won't dominate the world the way that it does today and eventually the Bible tells us that even this stage of history will lead to something greater.
 
-## Sin and death during the millennium
+At the end of the thousand years there will be a final judgment. Those who have faithfully followed God will be granted immortality. The rebellious will be removed. And at that point God's purpose for the earth will finally reach its completion. The book of Revelation describes this moment in powerful language. It says:
 
-During the 1,000 years, there will still be sin and death. However, sin will not be rampant or as unchecked as it is today. People will still become ill. Death will come, but likely at a later age than we experience today. There will still be sorrow, because though sin is greatly diminished, it is still in existence.
+> "Behold the dwelling place of God is with man. He will dwell with them, and they will be his people, … He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away."
 
-## When sin and death end forever
-
-It is not until the end of the 1,000 years when a final rebellion occurs. At that time, those who have been faithful will be judged as righteous by Jesus, and join the existing saints as immortals. The rebellious will be destroyed. When that is accomplished, the earth will be filled with immortal, sinless people. **No more sin. No more death.**
-
-This will fulfill the plan and purpose of God with mankind. Jesus also will have accomplished his work when he hands the kingdom over to his Father. But how will life be different? Let’s let the Revelation describe it for us.
-
-> And I heard a loud voice from the throne saying, “Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away.”  
-> — Revelation 21:3–4
-
-This is why Jesus destroyed the power of the devil. This is why he gave himself on the cross. It is to create a world filled with men and women who glorify and praise God forever. It is to erase the barrier between God and man.
-
-## God’s patience today
-
-Today, God sees the injustices of humans. He sees the most vulnerable being abused. He sees what men do in secret, as well as in public. He hears the insanity of men and women who deny Him, and reject Him as the Creator. But He is longsuffering, and patient. He has a plan for our redemption, and He has revealed it to us. For believers, the conquest of sin and death will lead to an eternal existence, beyond any joy we have known.
+This is the future the Bible promises, a world where sorrow is gone, a world where death no longer exists, a world filled with men and women who live in harmony with their creator. That is why Jesus gave his life. Through his death and resurrection, he opened a way for humanity to be freed from the power of sin and death. God sees the suffering and injustice that exist in the world today. He sees the harm that people do to one another, both openly and in secret. But the scriptures tell us God is patient, that He's giving people time to turn back to Him, because His purpose is not simply to judge the world, His purpose is to restore. And for those who place their hope in Him, the future described by the Bible, is more than just a distant dream. It's the promise of a world beyond anything we have ever experienced, a world that's finally free from sin and death.

@@ -1,68 +1,57 @@
 ---
-title: "Temptation of Jesus in the Wilderness — video overview (transcript)"
-description: "Transcript for the video on Temptation of Jesus in the Wilderness"
+title: "The Temptation in the Wilderness"
+description: "Transcript for the video on the temptation of Jesus in the wilderness."
 permalink: /transcripts/temptation-in-wilderness/
-videoTitle: "Temptation of Jesus in the Wilderness"
-youtubeVideoId: "IGbjT0MQ-Ew"
+videoTitle: "The Temptation in the Wilderness"
+youtubeVideoId: "Y8BOW6Fw9Ic"
 backUrl: "/videos/"
 backLabel: "Back to Videos"
 ---
 
-In this video, we will discuss the temptation of Jesus Christ in the wilderness.
+# Jesus' Temptation in the Wilderness
 
-## Baptism and the Spirit
+Shortly after Jesus was baptized something unusual happened. The gospel tells us that immediately after his baptism, Jesus was led into the wilderness and tempted for 40 days. You're probably familiar with the basic story. Jesus was hungry after having not eaten for 40 days and a figure called Satan appeared to tempt him three different times. But when you read the account carefully a number of questions begin to arise. Who was Jesus really being tempted by? Why did this event happen right after his baptism? And what can these temptations teach us about the way in which Jesus overcame sin? In this video we're going to look closely at the temptation of Jesus in the wilderness. What happened, what it means, and why it's so important for us today.
 
-You may recall that Jesus was baptized by John the Baptist in the Jordan River. After Jesus emerged from the water, God proclaimed:
+To understand the temptations of Jesus in the wilderness, we first need to understand what had just happened in Jesus' life. In Matthew chapter 3 Jesus was baptized by John in the Jordan river and as he came out of the water, Matthew says:
 
-> “This is my beloved son, in whom I am well pleased.” *(Matthew 3:17)*
+> "The heavens were opened to him, and he saw the spirit of God descending like a dove and coming to rest on him… and behold, a voice from heaven said, This is my beloved son with whom I am well pleased."
 
-Additionally, the Spirit descended on Jesus. We are told in John’s gospel (John 3:34) that Jesus was not given a measure, or portion of the Holy Spirit, but rather without limit. This marks an important development in the life of Jesus, as he now is fully capable of performing all miracles.
+John's gospel later explains that Jesus received the spirit without measure. In other words, unlike the prophets before him, who were given portions of God's spirit for specific tasks, Jesus was given the spirit fully. But then something surprising happened. Immediately we're told, the spirit led Jesus into the wilderness and for 40 days he remained there fasting and confronting a series of temptations that would shape the way he carried out his ministry.
 
-Luke’s gospel tells us that when Jesus left the Jordan, where he was baptized, he was **“full of the Holy Spirit.”**
+But before we look at those temptations themselves, it's important to remember something that the Bible says about Jesus. The writer to the Hebrews tells us that Jesus was tempted in all points like as we are, yet without sin. In other words, the temptations that Jesus experienced, were not completely different from ours. They were part of the same human struggle that every person faces. The difference is that Jesus never gave in to them. So, this period in the wilderness was a time for Jesus to confront his own human desires and learn perfect obedience to his Father's will. As we look at the three temptations recorded in the gospels, we see that they all revolve around a similar theme. And that's how Jesus would use the power that he had just received from God. Would he use it for personal comfort? Would he use it for fame and recognition? Or to prove himself to others? Well let's look at each temptation in turn.
 
-## Driven into the wilderness
+The first temptation took place after Jesus had been fasting for 40 days. Naturally he was extremely hungry and in that moment a thought presented itself. The stones scattered across the wilderness looked very similar to small loaves of bread. And now that Jesus possessed the power of the spirit, he had the ability to perform miracles. So, the temptation was very simple. Why not turn the stones into bread? It would immediately solve his hunger, but Jesus refused. Instead, he responded by quoting from the book of Deuteronomy. He said:
 
-Immediately, we are told, he is “driven” into the wilderness. In fact, we are told that the Spirit drove him into the wilderness. He was there 40 days and nights, not eating or drinking. It is important to note that **the Spirit led the temptations of Jesus.** They were not the creation of a supernatural being, or even another person. This was a time for Jesus to learn obedience by confronting his own will, and subjecting it to his Father’s.
+> "Man shall not live by bread alone but by every word of God."
 
-Before we begin looking at the temptation of Jesus, we need to remind ourselves that Jesus was **“tempted in all points like we are, yet without sin.”** His temptations to sin were just like ours. He experienced the pull of the flesh. We will see in the three temptations that are named, the main struggles that Jesus would face were about using the Spirit for personal gain, glory, and exaltation.
+Jesus understood that the physical needs were not the most important thing. His life and his mission were to be guided by the will of God not by the desires of the flesh and so he resisted the temptation, by grounding his thinking in scripture.
 
-So, if Jesus were tempted by an external force, one that had an intimate discussion with him, this would be far different than what we experience with our temptation to sin. We suggest that the temptations of Jesus are his own internal struggles against the flesh. Let’s look at each.
+The next temptation is described as Jesus seeing all the kingdoms of the world in a moment of time from a very high mountain, and of course there is no mountain on earth high enough to literally see every kingdom of the world at once. What this tells us is that the temptation is better understood as something happening within Jesus' mind. A vision of the future possibilities before him. Jesus knew that he had been chosen to become king in God's Kingdom. The temptation was to take that authority immediately. He could accept glory, power, and recognition right away. He could be the king that all the people were expecting. Yet Jesus knew this was not the path that God had chosen. Once again, he responded by quoting from the law of Moses:
 
-### First temptation: stones into bread
+> "Thou shalt worship the Lord thy God, and him only shalt thou serve."
 
-The first temptation is to turn the stones into bread. We are told that Jesus was hungry, not having eaten for more than a month. His temptation was associated with the knowledge that he now possessed the power to turn these rounded stones in the wilderness into bread that could nourish him. This was a new temptation for Jesus, having now been given the Spirit without measure. Jesus answered the temptation by quoting from Deuteronomy: **“It is written, That man shall not live by bread alone, but by every word of God.”** *(Luke 4:4)*
+So, he refused the temptation of being the king before it was the proper time.
 
-Jesus used the Scriptures to shape and transform his mind. Jesus thought back to the Law of Moses. We can also use principles in the Bible to govern our lives. Jesus did not need an external tempter to imagine the stones being bread. It was a reasonable thought of a man who now had the power to end his hunger with a miracle.
+The final temptation was set in the temple ledges and the idea presented to Jesus was dramatic. What if he threw himself down from the highest point of the temple. After all Psalm 91 said:
 
-### Second temptation: all the kingdoms
+> "That he will command his angels concerning you to guard you in all your ways."
 
-The second temptation is where he is taken to “a very high mountain” and shown all the kingdoms of the world in a moment. This is the plainest example of where this is **not a literal event,** but rather one of the temptations that Jesus worked though in his own mind. There is no mountain that is high enough for all the kingdoms of the world to be seen at once—it’s physically impossible. But as Jesus worked through the gift of the Holy Spirit, he understood that there would be times where he would be tempted to introduce his kingdom right away, to accept the accolades and exaltation of the crowds. However, once again Jesus goes back to Deuteronomy, noting that all worship should be of God alone.
+This temptation even involved a quotation from the scriptures itself, but Jesus immediately recognized the flaw in the reasoning. To use God's power in that way would not be an act of faith. It would be testing God. So, Jesus once again turned to Deuteronomy and replied:
 
-### Third temptation: the temple pinnacle
+> "Thou shalt not tempt the Lord thy God."
 
-The third temptation is said to be in Jerusalem, where he is told that he could cast himself from the pinnacle of the temple, but the angels would be there to bear him up. Note that the “Satan” actually quotes Scripture in this temptation, quoting Psalm 91. This appears to be a more difficult and subtle temptation. Could he justify using the Spirit to prove he was the Son of God to those who did not believe? Psalm 91 seemed to indicate this. But Jesus responds with another citation from Deuteronomy, **“Thou shalt not tempt the Lord thy God.”**
+In other words, Jesus refused to misuse the power of God simply to prove himself to others.
 
-## Was there a supernatural adversary?
+At this point many people take the text at face value and assume that these temptations must have come from a supernatural being called Satan. But when you actually look at the Greek word behind Satan in the Bible, it simply means an adversary or an opponent. Throughout the Bible, Satan is used as a symbol for any force that opposes God's will and that includes the sinful desires within human nature. The Bible actually explains where temptation comes from very clearly. In the book of James it says:
 
-So, was there a supernatural adversary, or Satan, that was doing this to Jesus? Did he get escorted to an exceedingly high mountain, or taken to the temple pinnacle in Jerusalem? Mark’s gospel makes it clear that the full 40-day period was in the wilderness. **The visions of Jerusalem and a high mountain were created in the mind of the Lord.**
+> "Let no one say when he is tempted, I am being tempted by God, for God cannot be tempted with evil, and he himself tempts no one. But each person is tempted when he is lured and enticed by his own desire. Then desire when it has conceived gives birth to sin, and sin when it is fully grown brings forth death."
 
-## What “Satan” means
+What that means is that the temptations Jesus experienced were part of the same human struggle that we all experience. The difference is that Jesus always chose obedience to God.
 
-Satan is a term that is used often in the Bible. It simply means **“an opponent,”** or **“an adversary.”** There is a Satan in the book of Job that reasons with God. Satan brings about calamities on Job, but none of them are outside the control of God. Satan is often used as a symbol of sin. In Revelation 20, Satan is included with other symbols of sin, to include the dragon, the old serpent, and the Devil. All of these symbols are about to be destroyed in Revelation 20 at the end of the 1,000-year reign of Jesus on the earth. We learn at the end of Revelation 20 that the final destruction of the dragon, serpent, devil and Satan is realized when sin and death are finally destroyed.
+So why was Jesus tempted immediately after being baptized and receiving the spirit? Well, they prepared Jesus for the challenges he would face throughout his ministry. There would be moments when he could use miraculous power to serve himself. There would be moments when crowds would try to make him king. And there would be times when people demanded that he prove who he was with dramatic miracles. But Jesus had already prepared for those moments in his mind. He knew that his mission was not about personal comfort, not about fame, or proving himself. It was about faithfully carrying out the will of God. This same commitment was ultimately tested again in the garden of Gethsemane where Jesus prayed in deep anguish before his crucifixion. Yet even then, he chose to say:
 
-## Why these temptations matter
+> "Not my will, but yours be done."
 
-How are these temptations in the wilderness relevant? Why would the Spirit want Jesus to experience these trials? Each of these three temptations would be extremely germane, and preparatory to the Lord as he began his ministry. There would be many times when he could choose to use the Holy Spirit to provide for his own needs. But instead, Jesus learned to rely on his Father for all care and sustenance. Several times crowds were so impressed with his miracles and his preaching that they wanted to make him king. Jesus resisted this, realizing that his kingdom was not of this world. His glory and exaltation will be when he returns to the earth and sets up the everlasting Kingdom of God. Finally, Jesus had times when unbelievers demanded him to prove his authenticity, and he could have used a miracle to silence them. For example, when Jesus was on the cross, mockers cried out for Jesus to come down from the cross, and then they would believe. But Jesus had already prepared his mind for this, and would not misuse the Spirit for this purpose.
+The temptation of Jesus in the wilderness teaches an important lesson about where temptation comes from and how it can be overcome. Like Jesus, we all face desires that pull us away from the will of God. And like Jesus, we have a choice in how we respond. Throughout these temptations Jesus consistently turned to the word of God to guide his thinking. Scripture shaped the way that he responded to every challenge and in the same way when we allow the teaching of the Bible to shape our thinking, we're far better equipped to resist the impulses that lead to sin.
 
-## Where temptation comes from
-
-The Bible is clear where temptation comes from.
-
-> Let no one say when he is tempted, “I am being tempted by God,” for God cannot be tempted with evil, and he himself tempts no one. But each person is tempted when he is lured and enticed by his own desire. Then desire when it has conceived gives birth to sin, and sin when it is fully grown brings forth death  
-> — James 1:13–15 (ESV)
-
-## Gethsemane and our example
-
-We understand the temptation in the wilderness to be an important progression in the ministry of the Lord Jesus Christ. During his ministry, he would struggle with the impulses we all would have to use the powerful Spirit in ways that did not bring glory to God. He overcame these temptations by turning to the word of God, and citing holy principles. None of these temptations were greater than when he was in the Garden of Gethsemane the night of his betrayal. He prayed earnestly, and was in great sorrow. But ultimately, he had the faith required to put his Father’s will above his own.
-
-In our own temptations, which happen within our own hearts, we too would do well to turn to the instruction of Scripture, to put the will of God above our own. **Jesus did this as our example.**
+So, the temptation of Jesus in the wilderness was far more than a strange story at the beginning of the gospels. It was a crucial moment in the preparation of Jesus' ministry. During those 40 days, Jesus confronted the same kind of desires that every human being experiences, the desire for comfort, power, and recognition. But instead of giving in to those impulses, he chose obedience to God and by doing so, he set the perfect example of how a life devoted to God should be lived.
