@@ -52,15 +52,17 @@ eleventyExcludeFromCollections: true
           <div class="city-page__speaker" aria-labelledby="speaker-title">
             <h3 id="speaker-title" class="city-page__speaker-title">Speaker</h3>
             <div class="city-page__speaker-card">
-              <img
-                class="city-page__speaker-photo"
-                src="{{ speaker.photo }}"
-                alt="{{ speaker.name }}"
-                width="240"
-                height="240"
-                loading="lazy"
-                decoding="async"
-              />
+              {% if speaker.photo %}
+                <img
+                  class="city-page__speaker-photo"
+                  src="{{ speaker.photo }}"
+                  alt="{{ speaker.name }}"
+                  width="240"
+                  height="240"
+                  loading="lazy"
+                  decoding="async"
+                />
+              {% endif %}
               <div class="city-page__speaker-copy">
                 <h4 class="city-page__speaker-name">
                   {{ speaker.name }}{% if speaker.credentials %}, {{ speaker.credentials }}{% endif %}
