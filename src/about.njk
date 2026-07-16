@@ -41,11 +41,11 @@ transcriptSlug: "about-overview"
         <div class="bright-video">
           <div class="bright-video__embed">
             <iframe
-              src="https://www.youtube.com/embed/{{ youtubeVideoId }}"
+              src="{{ youtubeVideoId | youtubeEmbedSrc }}"
               title="Overview of the Christadelphians"
               loading="lazy"
               referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
           </div>

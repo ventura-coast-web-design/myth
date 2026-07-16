@@ -10,10 +10,11 @@ mainClass: site-main--bright
 <div class="container transcript-page">
   {% if videoTitle or youtubeVideoId %}
     <div class="transcript-page__toolbar">
-      {% if youtubeVideoId and videoTitle %}
-        <a class="btn btn--bright-primary transcript-page__watch" href="https://www.youtube.com/watch?v={{ youtubeVideoId }}">Watch &ldquo;{{ videoTitle }}&rdquo;</a>
-      {% elif youtubeVideoId %}
-        <a class="btn btn--bright-primary transcript-page__watch" href="https://www.youtube.com/watch?v={{ youtubeVideoId }}">Watch on YouTube</a>
+      {% set watchHref = youtubeVideoId | videoWatchHref(videos) %}
+      {% if watchHref and videoTitle %}
+        <a class="btn btn--bright-primary transcript-page__watch" href="{{ watchHref }}">Watch &ldquo;{{ videoTitle }}&rdquo;</a>
+      {% elif watchHref %}
+        <a class="btn btn--bright-primary transcript-page__watch" href="{{ watchHref }}">Watch the video</a>
       {% elif videoTitle %}
         <span class="transcript-page__video-label">{{ videoTitle }}</span>
       {% endif %}

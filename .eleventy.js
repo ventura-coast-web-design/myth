@@ -64,6 +64,35 @@ module.exports = function(eleventyConfig) {
     return "";
   });
 
+  // YouTube still requires its logo / “Watch on YouTube” link in embeds; these
+  // params only reduce other ways viewers leave (e.g. unrelated end-screen videos).
+  eleventyConfig.addFilter("youtubeEmbedSrc", function (videoId) {
+    if (!videoId || typeof videoId !== "string") return "";
+
+    const params = new URLSearchParams({
+      rel: "0",
+      playsinline: "1",
+    });
+
+    return (
+      "https://www.youtube-nocookie.com/embed/" +
+      encodeURIComponent(videoId.trim()) +
+      "?" +
+      params.toString()
+    );
+  });
+
+  eleventyConfig.addFilter("videoWatchHref", function (youtubeId, videos) {
+    if (!youtubeId || !Array.isArray(videos)) return "";
+
+    const match = videos.find((video) => video && video.youtubeId === youtubeId);
+    if (match && match.slug) {
+      return "/videos/" + match.slug + "/";
+    }
+
+    return "";
+  });
+
   return {
     dir: {
       input: "src",
