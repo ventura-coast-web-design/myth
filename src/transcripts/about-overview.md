@@ -3,7 +3,7 @@ title: "Overview of the Christadelphians"
 description: "Transcript for the overview video on the About page."
 permalink: /transcripts/about-overview/
 videoTitle: "Overview of the Christadelphians"
-youtubeVideoId: "ZIf8LeVeupY"
+youtubeVideoId: "PyJB2nFDM6M"
 backUrl: "/about/"
 backLabel: "Back to About"
 ---
