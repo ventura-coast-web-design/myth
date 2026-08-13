@@ -36,6 +36,12 @@ permalink: /local-presentations/
       <p class="city-modal__sub">You’ll go to that city’s page with full details and the contact form.</p>
     </header>
     <ul class="city-modal__list" role="list">
+      <li class="city-modal__item city-modal__item--zoom" data-final-zoom hidden>
+        <a class="city-modal__choice city-modal__choice--zoom" href="/virtual-classes/#virtual-signup">
+          <span class="city-modal__choice-city">Zoom class</span>
+          <span class="city-modal__choice-region">Final online opportunity — registration required</span>
+        </a>
+      </li>
       {% for c in cities %}
         {% set endsAt = c | latestSessionEnd %}
         <li

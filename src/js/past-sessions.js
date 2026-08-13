@@ -76,6 +76,38 @@
     });
   }
 
+  function allSessionsPast(items) {
+    var dated = items.filter(function (item) {
+      return item.hasAttribute("data-ends-at");
+    });
+    return (
+      dated.length > 0 &&
+      dated.every(function (item) {
+        return item.classList.contains("is-past");
+      })
+    );
+  }
+
+  function placeFinalZoom(list, items) {
+    var zoom = list.querySelector("[data-final-zoom]");
+    if (!zoom) return;
+
+    if (!allSessionsPast(items)) {
+      zoom.hidden = true;
+      return;
+    }
+
+    zoom.hidden = false;
+    var firstPast = items.find(function (item) {
+      return item.classList.contains("is-past");
+    });
+    if (firstPast) {
+      list.insertBefore(zoom, firstPast);
+    } else {
+      list.insertBefore(zoom, list.firstChild);
+    }
+  }
+
   function closeLocationCardRegistration(card) {
     var actions = card.querySelector("[data-register-action]");
     if (!actions) return;
@@ -97,6 +129,7 @@
     });
 
     reorderList(list, cards);
+    placeFinalZoom(list, cards);
   }
 
   function markCityModal() {
@@ -122,6 +155,19 @@
     });
 
     reorderList(list, items);
+    placeFinalZoom(list, items);
+
+    if (allSessionsPast(items)) {
+      var title = document.getElementById("city-modal-title");
+      var sub = document.querySelector(".city-modal__sub");
+      if (title) {
+        title.textContent = "In-person classes have concluded";
+      }
+      if (sub) {
+        sub.textContent =
+          "Register for a final Zoom class, or review a completed city page below.";
+      }
+    }
   }
 
   function markCityPage() {
@@ -132,10 +178,16 @@
     var notice = page.querySelector("[data-registration-closed]");
     var intro = page.querySelector(".city-page__contact .section__head p");
     var privacy = page.querySelector("[data-registration-privacy]");
+    var zoomLink = page.querySelector("[data-final-zoom-link]");
+    var seriesEnd = page.getAttribute("data-series-ends-at");
+    var timeZone = page.getAttribute("data-timezone") || "America/Los_Angeles";
 
     if (notice) notice.hidden = false;
     if (intro) intro.hidden = true;
     if (privacy) privacy.hidden = true;
+    if (zoomLink && seriesEnd && isPast(seriesEnd, timeZone)) {
+      zoomLink.hidden = false;
+    }
     if (form) {
       form.hidden = true;
       form.setAttribute("aria-hidden", "true");

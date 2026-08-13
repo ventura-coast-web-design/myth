@@ -8,9 +8,11 @@ layout: base.njk
 eleventyExcludeFromCollections: true
 ---
 {% set endsAt = city | latestSessionEnd %}
+{% set seriesEndsAt = cities | seriesLatestEnd %}
 <article
   class="city-page"
   {% if endsAt %}data-ends-at="{{ endsAt }}" data-timezone="{{ city | sessionTimezone }}"{% endif %}
+  {% if seriesEndsAt %}data-series-ends-at="{{ seriesEndsAt }}"{% endif %}
 >
   <header class="city-page__hero" aria-labelledby="city-page-title">
     <div class="city-page__hero-inner container">

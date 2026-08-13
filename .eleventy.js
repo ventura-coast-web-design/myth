@@ -40,6 +40,20 @@ module.exports = function(eleventyConfig) {
     }, "");
   });
 
+  eleventyConfig.addFilter("seriesLatestEnd", function (cities) {
+    if (!Array.isArray(cities) || cities.length === 0) return "";
+
+    return cities.reduce(function (latest, city) {
+      if (!city || !Array.isArray(city.sessions)) return latest;
+      return city.sessions.reduce(function (cityLatest, session) {
+        if (!session) return cityLatest;
+        var end = session.end || session.start || "";
+        if (!end) return cityLatest;
+        return !cityLatest || end > cityLatest ? end : cityLatest;
+      }, latest);
+    }, "");
+  });
+
   eleventyConfig.addFilter("sessionTimezone", function (city) {
     if (!city || !Array.isArray(city.sessions)) return "America/Los_Angeles";
     for (var i = 0; i < city.sessions.length; i++) {

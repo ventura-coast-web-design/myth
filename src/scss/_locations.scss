@@ -141,6 +141,36 @@
   color: variables.$light-text;
 }
 
+.location-card__kicker {
+  margin: 0 0 0.35rem;
+  padding-left: 0.1rem;
+  font-family: variables.$font-family-condensed;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: variables.$accent-yellow;
+}
+
+.location-card--zoom {
+  border-color: color.change(variables.$accent-yellow, $alpha: 0.55);
+  background: color.change(variables.$accent-yellow, $alpha: 0.08);
+  box-shadow: 0 4px 0 color.change(variables.$accent-yellow, $alpha: 0.28);
+
+  &::before {
+    background: linear-gradient(
+      180deg,
+      variables.$accent-yellow 0%,
+      color.adjust(variables.$accent-yellow, $lightness: -18%) 100%
+    );
+  }
+
+  .location-card__venue {
+    color: variables.$text-color;
+    font-weight: 500;
+  }
+}
+
 .locations__virtual-cta {
   margin: 1rem 0 0;
 }

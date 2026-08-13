@@ -154,6 +154,21 @@
   color: variables.$light-text;
 }
 
+.city-modal__choice--zoom {
+  border-color: color.change(variables.$accent-yellow, $alpha: 0.55);
+  background: color.change(variables.$accent-yellow, $alpha: 0.08);
+
+  &:hover {
+    border-color: variables.$accent-yellow;
+    background: color.change(variables.$accent-yellow, $alpha: 0.14);
+    box-shadow: 0 2px 10px color.change(variables.$ink, $alpha: 0.08);
+  }
+
+  .city-modal__choice-region {
+    color: color.change(variables.$accent-yellow, $alpha: 0.9);
+  }
+}
+
 .city-modal__actions {
   margin: 0;
   padding: 0;
@@ -390,6 +405,15 @@ $city-hero-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='ht
     margin: 0;
     color: variables.$light-text;
     line-height: 1.5;
+  }
+
+  p + p {
+    margin-top: 0.75rem;
+  }
+
+  a {
+    color: variables.$accent-yellow;
+    font-weight: 700;
   }
 }
 
