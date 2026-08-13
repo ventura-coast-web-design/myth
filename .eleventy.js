@@ -27,6 +27,29 @@ module.exports = function(eleventyConfig) {
     return pageUrl === path || pageUrl.startsWith(path);
   });
 
+  eleventyConfig.addFilter("latestSessionEnd", function (city) {
+    if (!city || !Array.isArray(city.sessions) || city.sessions.length === 0) {
+      return "";
+    }
+
+    return city.sessions.reduce(function (latest, session) {
+      if (!session) return latest;
+      var end = session.end || session.start || "";
+      if (!end) return latest;
+      return !latest || end > latest ? end : latest;
+    }, "");
+  });
+
+  eleventyConfig.addFilter("sessionTimezone", function (city) {
+    if (!city || !Array.isArray(city.sessions)) return "America/Los_Angeles";
+    for (var i = 0; i < city.sessions.length; i++) {
+      if (city.sessions[i] && city.sessions[i].timezone) {
+        return city.sessions[i].timezone;
+      }
+    }
+    return "America/Los_Angeles";
+  });
+
   eleventyConfig.addFilter("mapsLinkUrl", function (city) {
     if (!city) return "";
 

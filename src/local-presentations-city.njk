@@ -7,7 +7,11 @@ permalink: "local-presentations/{{ city.slug }}/index.html"
 layout: base.njk
 eleventyExcludeFromCollections: true
 ---
-<article class="city-page">
+{% set endsAt = city | latestSessionEnd %}
+<article
+  class="city-page"
+  {% if endsAt %}data-ends-at="{{ endsAt }}" data-timezone="{{ city | sessionTimezone }}"{% endif %}
+>
   <header class="city-page__hero" aria-labelledby="city-page-title">
     <div class="city-page__hero-inner container">
       <nav class="city-page__crumb" aria-label="Breadcrumb">

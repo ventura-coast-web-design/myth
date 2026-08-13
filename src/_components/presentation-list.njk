@@ -6,7 +6,11 @@
 
     <ul class="locations__list" role="list">
       {% for place in cities %}
-        <li class="location-card">
+        {% set endsAt = place | latestSessionEnd %}
+        <li
+          class="location-card"
+          {% if endsAt %}data-ends-at="{{ endsAt }}" data-timezone="{{ place | sessionTimezone }}"{% endif %}
+        >
           <h3 class="location-card__title">
             {{ place.city }}{% if place.region %}, {{ place.region }}{% endif %}
           </h3>
@@ -22,7 +26,9 @@
             {% endfor %}
           </address>
           <p class="location-card__actions">
-            <a href="/local-presentations/{{ place.slug }}/"><button class="btn btn--primary" type="button" >Register</button></a>
+            <span data-register-action>
+              <a href="/local-presentations/{{ place.slug }}/"><button class="btn btn--primary" type="button">Register</button></a>
+            </span>
             <a class="location-card__link location-card__link--primary" href="/local-presentations/{{ place.slug }}/">
               Location details
             </a>

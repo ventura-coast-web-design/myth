@@ -132,6 +132,28 @@
   color: variables.$light-text;
 }
 
+.city-modal__item.is-past .city-modal__choice,
+.city-modal__choice.is-past {
+  opacity: 0.55;
+  filter: grayscale(0.85);
+
+  &:hover {
+    border-color: variables.$border-strong;
+    background: variables.$light-background;
+    box-shadow: none;
+  }
+}
+
+.city-modal__choice-status {
+  margin-top: 0.2rem;
+  font-family: variables.$font-family-condensed;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: variables.$light-text;
+}
+
 .city-modal__actions {
   margin: 0;
   padding: 0;
@@ -356,6 +378,26 @@ $city-hero-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='ht
   }
 }
 
+.city-page__registration-closed {
+  margin: 0 0 1rem;
+  max-width: min(100%, 48ch);
+  padding: 1rem 1.1rem;
+  border: 2px solid variables.$border-strong;
+  border-radius: 2px;
+  background: color.change(#fff, $alpha: 0.04);
+
+  p {
+    margin: 0;
+    color: variables.$light-text;
+    line-height: 1.5;
+  }
+}
+
+.city-page.is-past .city-page__schedule-pair__img[alt="Register now"] {
+  opacity: 0.55;
+  filter: grayscale(0.85);
+}
+
 .city-page__venue-grid {
   display: grid;
   gap: 1.5rem;
@@ -458,6 +500,20 @@ $city-hero-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='ht
       variables.$primary-color 0%,
       color.adjust(variables.$primary-color, $lightness: -16%) 100%
     );
+  }
+
+  &.is-past {
+    opacity: 0.55;
+    filter: grayscale(0.85);
+    box-shadow: none;
+
+    &::before {
+      background: rgba(255, 255, 255, 0.22);
+    }
+
+    .city-page__session-date {
+      color: variables.$light-text;
+    }
   }
 }
 

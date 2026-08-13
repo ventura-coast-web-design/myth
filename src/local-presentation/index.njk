@@ -37,7 +37,11 @@ permalink: /local-presentations/
     </header>
     <ul class="city-modal__list" role="list">
       {% for c in cities %}
-        <li>
+        {% set endsAt = c | latestSessionEnd %}
+        <li
+          class="city-modal__item"
+          {% if endsAt %}data-ends-at="{{ endsAt }}" data-timezone="{{ c | sessionTimezone }}"{% endif %}
+        >
           <a class="city-modal__choice" href="/local-presentations/{{ c.slug }}/">
             <span class="city-modal__choice-city">{{ c.city }}</span>
             {% if c.region %}
