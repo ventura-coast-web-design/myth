@@ -12,6 +12,8 @@ Venue: {{VenueName}}
 Address: {{VenueAddress}}
 Number attending: {{AttendeeCount}}
 
+A calendar invite is attached to this email so you can add the class to your calendar.
+
 Dress for the event is casual, and you do not need to bring anything with you. A Bible may be helpful, but it is not required.
 
 If you have any questions before the event, simply reply to this email.
