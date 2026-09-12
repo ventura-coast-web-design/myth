@@ -4,6 +4,18 @@
       <h2 id="locations-title">Where Presentations will be held</h2>
     </header>
 
+    <div class="locations__map-wrap">
+      <div
+        id="locations-map"
+        class="locations__map"
+        data-locale="en"
+        role="region"
+        aria-label="Map of presentation locations across California"
+      ></div>
+      <script type="application/json" id="locations-map-data">{{ cities | locationsMapData | safe }}</script>
+      <p class="locations__map-hint">Tap a pin for venue details and registration.</p>
+    </div>
+
     <ul class="locations__list" role="list">
       {% for place in cities %}
         {% set endsAt = place | latestSessionEnd %}

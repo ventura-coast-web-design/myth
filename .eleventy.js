@@ -64,6 +64,37 @@ module.exports = function(eleventyConfig) {
     return "America/Los_Angeles";
   });
 
+  eleventyConfig.addFilter("locationsMapData", function (cities) {
+    if (!Array.isArray(cities)) return "[]";
+
+    return JSON.stringify(
+      cities
+        .filter(function (city) {
+          return (
+            city &&
+            typeof city.lat === "number" &&
+            typeof city.lng === "number" &&
+            city.slug
+          );
+        })
+        .map(function (city) {
+          var date =
+            city.sessions && city.sessions[0] && city.sessions[0].date
+              ? city.sessions[0].date
+              : "";
+          return {
+            slug: city.slug,
+            city: city.city || "",
+            region: city.region || "",
+            venueName: city.venueName || "",
+            date: date,
+            lat: city.lat,
+            lng: city.lng,
+          };
+        })
+    );
+  });
+
   eleventyConfig.addFilter("mapsLinkUrl", function (city) {
     if (!city) return "";
 
