@@ -87,6 +87,7 @@ module.exports = function(eleventyConfig) {
             city: city.city || "",
             region: city.region || "",
             venueName: city.venueName || "",
+            locationNote: city.locationNote || "",
             date: date,
             lat: city.lat,
             lng: city.lng,
@@ -116,7 +117,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("mapsEmbedSrc", function (city) {
     if (!city) return "";
 
-    if (city.mapUrl && city.mapUrl.includes("/embed")) {
+    if (
+      city.mapUrl &&
+      (city.mapUrl.includes("/embed") || city.mapUrl.includes("output=embed"))
+    ) {
       return city.mapUrl;
     }
 

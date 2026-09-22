@@ -1,0 +1,104 @@
+---
+layout: base.njk
+title: "Zoom class"
+description: "Register for the final Myth of Satan Zoom class."
+permalink: /local-presentations/zoom/
+---
+
+<article class="city-page city-page--zoom">
+  <header class="city-page__hero" aria-labelledby="city-page-title">
+    <div class="city-page__hero-inner container">
+      <nav class="city-page__crumb" aria-label="Breadcrumb">
+        <a href="/local-presentations/">Local Presentations</a>
+        <span aria-hidden="true"> / </span>
+        <span class="city-page__crumb-current">Zoom class</span>
+      </nav>
+      <p class="city-page__kicker">Final online opportunity</p>
+      <h1 id="city-page-title" class="city-page__title">Zoom class</h1>
+      <p class="city-page__region">Online — registration required</p>
+    </div>
+  </header>
+
+  <section class="section city-page__schedule-pair" aria-labelledby="zoom-signup-title">
+    <div class="container city-page__schedule-pair-grid">
+      <div class="city-page__schedule-pair__schedule">
+        <img
+          id="zoom-signup-title"
+          src="/assets/presentation-schedule.webp"
+          alt="Exposing a myth"
+          class="city-page__schedule-pair__img"
+        />
+        <aside class="city-page__zoom" role="note" aria-labelledby="zoom-title">
+          <p id="zoom-title" class="city-page__zoom-badge">
+            <span class="city-page__zoom-badge-dot" aria-hidden="true"></span>
+            Available on Zoom
+          </p>
+          <p class="city-page__zoom-note">
+            All in-person presentations have concluded. Register below for a final Zoom class
+            to hear this presentation online. Organizers will send you the link to join.
+          </p>
+        </aside>
+      </div>
+
+      <div class="city-page__contact city-page__contact--pair" id="contact" aria-labelledby="city-contact-title">
+        <header class="section__head">
+          <img
+            id="city-contact-title"
+            src="/assets/register-image.webp"
+            alt="Register now"
+            class="city-page__schedule-pair__img"
+          />
+          <p>Register for the Zoom class.</p>
+        </header>
+        <p data-registration-privacy>
+          We collect this information only to provide class notification information. We will not use
+          or share this information for other purposes. We will not sell or rent this information to anyone.
+        </p>
+
+        <form
+          class="contact-form"
+          name="virtual-presentation-signup"
+          method="POST"
+          action="/thanks/registration/"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <p class="contact-form__hp">
+            <label>
+              Do not fill this out if you are human:
+              <input name="bot-field" tabindex="-1" autocomplete="off" />
+            </label>
+          </p>
+
+          <input type="hidden" name="signup-type" value="virtual" />
+          <input type="hidden" name="city-slug" value="zoom" />
+          <input type="hidden" name="city-label" value="Zoom class" />
+
+          <div class="contact-form__field">
+            <label for="zoom-name">Name</label>
+            <input id="zoom-name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="zoom-email">Email</label>
+            <input id="zoom-email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="zoom-phone">Phone <span class="contact-form__hint">(optional)</span></label>
+            <input id="zoom-phone" name="phone" type="tel" autocomplete="tel" />
+          </div>
+
+          <div class="contact-form__field">
+            <label for="zoom-notes">
+              Notes <span class="contact-form__hint">(optional — time zone, questions, etc.)</span>
+            </label>
+            <textarea id="zoom-notes" name="message" rows="3"></textarea>
+          </div>
+
+          <button class="btn btn--primary" type="submit">Register for Zoom</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</article>

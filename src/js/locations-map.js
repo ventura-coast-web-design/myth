@@ -65,6 +65,11 @@
             escapeHtml(place.date) +
             "</p>"
           : "";
+        var note = place.locationNote
+          ? '<p class="locations-map__popup-note">' +
+            escapeHtml(place.locationNote) +
+            "</p>"
+          : "";
         var venue = place.venueName
           ? '<p class="locations-map__popup-venue">' +
             escapeHtml(place.venueName) +
@@ -76,6 +81,7 @@
           escapeHtml(placeTitle(place, grouped)) +
           "</strong>" +
           date +
+          note +
           venue +
           '<a class="locations-map__popup-link" href="/local-presentations/' +
           escapeHtml(place.slug) +

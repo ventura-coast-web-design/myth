@@ -464,6 +464,22 @@ $city-hero-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='ht
   max-width: 50ch;
 }
 
+.city-page__location-note {
+  margin: 0 0 0.85rem;
+  padding: 0.45rem 0.7rem;
+  border-left: 3px solid variables.$accent-yellow;
+  background: color.change(variables.$accent-yellow, $alpha: 0.12);
+  font-weight: 700;
+  line-height: 1.4;
+  color: variables.$accent-yellow;
+}
+
+.city-page__location-note--hero {
+  display: inline-block;
+  margin-top: 1.15rem;
+  max-width: 40ch;
+}
+
 .city-page__venue-name {
   margin: 0 0 0.5rem;
   font-family: variables.$font-family-display;
@@ -627,6 +643,70 @@ $city-hero-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='ht
 
   dd {
     margin: 0;
+  }
+}
+
+.city-page__zoom {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1.25rem;
+  padding: 1.1rem 1.2rem 1.2rem 1.35rem;
+  border: 2px solid color.change(variables.$accent-yellow, $alpha: 0.4);
+  border-radius: 2px;
+  background: variables.$light-background;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 4px 0 rgba(0, 0, 0, 0.28);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 5px;
+    background: linear-gradient(
+      180deg,
+      variables.$accent-yellow 0%,
+      color.adjust(variables.$accent-yellow, $lightness: -14%) 100%
+    );
+  }
+}
+
+.city-page__zoom-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.6rem;
+  padding-left: 0.15rem;
+  font-family: variables.$font-family-condensed;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color.adjust(variables.$accent-yellow, $lightness: -22%);
+}
+
+.city-page__zoom-badge-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: variables.$primary-color;
+  box-shadow: 0 0 0 3px color.change(variables.$primary-color, $alpha: 0.22);
+}
+
+.city-page__zoom-note {
+  margin: 0;
+  padding-left: 0.15rem;
+  max-width: 60ch;
+  line-height: 1.6;
+}
+
+.city-page__zoom-link {
+  margin: 0.85rem 0 0;
+  padding-left: 0.15rem;
+
+  a {
+    font-weight: 700;
+    color: variables.$accent-yellow;
   }
 }
 

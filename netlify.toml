@@ -27,6 +27,21 @@
   status = 301
 
 [[redirects]]
+  from = "/virtual-classes"
+  to = "/local-presentations/zoom/"
+  status = 301
+
+[[redirects]]
+  from = "/virtual-classes/"
+  to = "/local-presentations/zoom/"
+  status = 301
+
+[[redirects]]
+  from = "/virtual-classes/*"
+  to = "/local-presentations/zoom/"
+  status = 301
+
+[[redirects]]
   from = "/christadelphians"
   to = "/about/"
   status = 301

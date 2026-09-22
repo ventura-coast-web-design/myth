@@ -26,6 +26,9 @@ eleventyExcludeFromCollections: true
       {% if city.region %}
         <p class="city-page__region">{{ city.region }}</p>
       {% endif %}
+      {% if city.locationNote %}
+        <p class="city-page__location-note city-page__location-note--hero">{{ city.locationNote }}</p>
+      {% endif %}
     </div>
   </header>
   <section class="section city-page__schedule-pair" aria-labelledby="schedule-title">
@@ -54,6 +57,22 @@ eleventyExcludeFromCollections: true
             </li>
           {% endfor %}
         </ol>
+        {% if city.zoom %}
+          <aside class="city-page__zoom" role="note" aria-labelledby="zoom-title">
+            <p id="zoom-title" class="city-page__zoom-badge">
+              <span class="city-page__zoom-badge-dot" aria-hidden="true"></span>
+              Available on Zoom
+            </p>
+            {% if city.zoom.note %}
+              <p class="city-page__zoom-note">{{ city.zoom.note }}</p>
+            {% endif %}
+            {% if city.zoom.url %}
+              <p class="city-page__zoom-link">
+                <a href="{{ city.zoom.url }}" rel="noopener noreferrer">{{ city.zoom.linkLabel or "Join on Zoom" }}</a>
+              </p>
+            {% endif %}
+          </aside>
+        {% endif %}
         {% if speaker %}
           <div class="city-page__speaker" aria-labelledby="speaker-title">
             <h3 id="speaker-title" class="city-page__speaker-title">Speaker</h3>
@@ -98,6 +117,9 @@ eleventyExcludeFromCollections: true
       <div class="city-page__venue-grid">
         <div class="city-page__venue-copy">
           <div class="city-page__address-block">
+            {% if city.locationNote %}
+              <p class="city-page__location-note">{{ city.locationNote }}</p>
+            {% endif %}
             {% if city.venueName %}
               <p class="city-page__venue-name">{{ city.venueName }}</p>
             {% endif %}

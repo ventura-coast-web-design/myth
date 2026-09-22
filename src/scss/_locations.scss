@@ -72,6 +72,14 @@
   color: #8a6a00;
 }
 
+.locations-map__popup-note {
+  margin: 0.15rem 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #8a6a00;
+}
+
 .locations-map__popup-venue {
   margin: 0 0 0.55rem;
   font-size: 0.85rem;
@@ -170,6 +178,17 @@
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: variables.$accent-yellow;
+}
+
+.location-card__note {
+  margin: 0 0 0.65rem;
+  padding: 0.4rem 0.65rem;
+  border-left: 3px solid variables.$accent-yellow;
+  background: color.change(variables.$accent-yellow, $alpha: 0.12);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.4;
   color: variables.$accent-yellow;
 }
 

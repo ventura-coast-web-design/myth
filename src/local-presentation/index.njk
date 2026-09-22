@@ -22,6 +22,7 @@ permalink: /local-presentations/
             {% for c in cities %}
               <li><a href="/local-presentations/{{ c.slug }}/">{{ c.city }}{% if c.region %}, {{ c.region }}{% endif %}</a></li>
             {% endfor %}
+            <li><a href="/local-presentations/zoom/">Zoom class</a></li>
           </ul>
         </div>
       </noscript>
@@ -37,7 +38,7 @@ permalink: /local-presentations/
     </header>
     <ul class="city-modal__list" role="list">
       <li class="city-modal__item city-modal__item--zoom" data-final-zoom hidden>
-        <a class="city-modal__choice city-modal__choice--zoom" href="/virtual-classes/#virtual-signup">
+        <a class="city-modal__choice city-modal__choice--zoom" href="/local-presentations/zoom/">
           <span class="city-modal__choice-city">Zoom class</span>
           <span class="city-modal__choice-region">Final online opportunity — registration required</span>
         </a>

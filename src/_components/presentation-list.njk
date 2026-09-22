@@ -29,6 +29,9 @@
           {% if place.sessions and place.sessions[0].date %}
             <p class="location-card__date">{{ place.sessions[0].date }}</p>
           {% endif %}
+          {% if place.locationNote %}
+            <p class="location-card__note">{{ place.locationNote }}</p>
+          {% endif %}
           {% if place.venueName %}
             <p class="location-card__venue">{{ place.venueName }}</p>
           {% endif %}
@@ -60,7 +63,6 @@
           All in-person presentations have concluded. Register for a final Zoom class to hear this presentation online.
         </p>
         <p class="location-card__actions">
-          <a class="btn btn--primary" href="/virtual-classes/#virtual-signup">Register for Zoom</a>
         </p>
       </li>
     </ul>
