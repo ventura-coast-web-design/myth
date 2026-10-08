@@ -19,10 +19,10 @@ permalink: /local-presentations/
         <div class="local-hub__noscript">
           <p>Select a city:</p>
           <ul>
+            <li><a href="/local-presentations/zoom/">Zoom class</a></li>
             {% for c in cities %}
               <li><a href="/local-presentations/{{ c.slug }}/">{{ c.city }}{% if c.region %}, {{ c.region }}{% endif %}</a></li>
             {% endfor %}
-            <li><a href="/local-presentations/zoom/">Zoom class</a></li>
           </ul>
         </div>
       </noscript>
@@ -37,7 +37,7 @@ permalink: /local-presentations/
       <p class="city-modal__sub">You’ll go to that city’s page with full details and the contact form.</p>
     </header>
     <ul class="city-modal__list" role="list">
-      <li class="city-modal__item city-modal__item--zoom" data-final-zoom hidden>
+      <li class="city-modal__item city-modal__item--zoom" data-final-zoom>
         <a class="city-modal__choice city-modal__choice--zoom" href="/local-presentations/zoom/">
           <span class="city-modal__choice-city">Zoom class</span>
           <span class="city-modal__choice-region">Final online opportunity — registration required</span>

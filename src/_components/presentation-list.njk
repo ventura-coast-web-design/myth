@@ -17,6 +17,18 @@
     </div>
 
     <ul class="locations__list" role="list">
+      <li class="location-card location-card--zoom" data-final-zoom>
+        <p class="location-card__kicker">Final opportunity</p>
+        <h3 class="location-card__title">Zoom class</h3>
+        <p class="location-card__date">Online — registration required</p>
+        <p class="location-card__venue">
+          All in-person presentations have concluded. Register for a final Zoom class to hear this presentation online.
+        </p>
+        <p class="location-card__actions">
+          <a class="btn btn--primary" href="/local-presentations/zoom/">Register</a>
+          <a class="location-card__link" href="{{ zoom.url }}" rel="noopener noreferrer" target="_blank">{{ zoom.linkLabel }}</a>
+        </p>
+      </li>
       {% for place in cities %}
         {% set endsAt = place | latestSessionEnd %}
         <li
@@ -54,18 +66,6 @@
           </p>
         </li>
       {% endfor %}
-
-      <li class="location-card location-card--zoom" data-final-zoom hidden>
-        <p class="location-card__kicker">Final opportunity</p>
-        <h3 class="location-card__title">Zoom class</h3>
-        <p class="location-card__date">Online — registration required</p>
-        <p class="location-card__venue">
-          All in-person presentations have concluded. Register for a final Zoom class to hear this presentation online.
-        </p>
-        <p class="location-card__actions">
-          <a class="btn btn--primary" href="/local-presentations/zoom/">Register for Zoom</a>
-        </p>
-      </li>
     </ul>
   </div>
 </section>

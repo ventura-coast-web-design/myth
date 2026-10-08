@@ -88,24 +88,12 @@
     );
   }
 
-  function placeFinalZoom(list, items) {
+  function placeFinalZoom(list) {
     var zoom = list.querySelector("[data-final-zoom]");
     if (!zoom) return;
 
-    if (!allSessionsPast(items)) {
-      zoom.hidden = true;
-      return;
-    }
-
     zoom.hidden = false;
-    var firstPast = items.find(function (item) {
-      return item.classList.contains("is-past");
-    });
-    if (firstPast) {
-      list.insertBefore(zoom, firstPast);
-    } else {
-      list.insertBefore(zoom, list.firstChild);
-    }
+    list.insertBefore(zoom, list.firstChild);
   }
 
   function closeLocationCardRegistration(card) {

@@ -287,6 +287,7 @@
 }
 
 .location-card--zoom {
+  grid-column: 1 / -1;
   border-color: color.change(variables.$accent-yellow, $alpha: 0.55);
   background: color.change(variables.$accent-yellow, $alpha: 0.08);
   box-shadow: 0 4px 0 color.change(variables.$accent-yellow, $alpha: 0.28);
