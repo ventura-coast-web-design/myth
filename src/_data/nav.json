@@ -1,7 +1,5 @@
 [
   { "label": "Home", "href": "/" },
-  { "label": "Locations", "href": "/#locations" },
   { "label": "Videos", "href": "/videos/" },
-  { "label": "About", "href": "/about/" },
-  { "label": "Local Presentations", "href": "/local-presentations/", "cta": true }
+  { "label": "About", "href": "/about/" }
 ]

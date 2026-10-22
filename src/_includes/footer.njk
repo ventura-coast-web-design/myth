@@ -2,20 +2,9 @@
     <div class="footer__container">
         <p>&copy; {{ page.date.getFullYear() if page.date else '2024' }} Christadelphian presentations on Exposing the Satan Myth.</p>
         <div class="footer__links">
-            <a href="/#locations">Locations</a>
             <a href="/videos/">Videos</a>
-            <a href="/local-presentations/">Local Presentations</a>
+            <a href="/about/">About</a>
         </div>
     </div>
 </footer>
 <script src="/js/nav.js" defer></script>
-<script src="/js/past-sessions.js" defer></script>
-{% if page.url == "/" %}
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""
-  defer
-></script>
-<script src="/js/locations-map.js" defer></script>
-{% endif %}
